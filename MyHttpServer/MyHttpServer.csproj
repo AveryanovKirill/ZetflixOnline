@@ -1,0 +1,208 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Templates\Pages\Admin\admin_panel.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HttpServerLibrary\HttpServerLibrary.csproj" />
+    <ProjectReference Include="..\MyORMLibrary\MyORMLibrary.csproj" />
+    <ProjectReference Include="..\TemplateEngine\TemplateEngine.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+	<None Update="public\zetflix\auth.html">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\dark.css">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\film.html">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7jsDJT9g.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7ksDJT9g.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDI.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7osDJT9g.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7psDJT9g.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7qsDJT9g.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7rsDJT9g.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\fonts\fontawesome-webfont.woff2">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\images\apple-touch-icon.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\images\favicon-16x16.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\images\favicon-32x32.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\images\first-screen-bg.jpg">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\images\kp-icon.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\images\lazy-poster.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\images\logo-6.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\images\logoflix.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\images\zetflix2k22.png">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\index.html">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\js\filter\script2.5.js">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\style.css">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\style_1.css">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\style_2.css">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="public\zetflix\style_3.css">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Templates\Pages\Auth\auth.html">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Templates\Pages\Film\film.html">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Templates\Pages\User\user.html">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+	<None Update="Templates\Pages\Zetflix\index.html">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+  </ItemGroup>
+
+
+</Project>

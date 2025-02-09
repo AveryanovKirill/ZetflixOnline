@@ -1,0 +1,3499 @@
+/* User-Agent Style */
+html {
+    background-color: #181a1b !important;
+}
+html, body, input, textarea, select, button {
+    background-color: #181a1b;
+}
+html, body, input, textarea, select, button {
+    border-color: #736b5e;
+    color: #e8e6e3;
+}
+a {
+    color: #3391ff;
+}
+table {
+    border-color: #545b5e;
+}
+::placeholder {
+    color: #b2aba1;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: #555b00 !important;
+    color: #e8e6e3 !important;
+}
+::-webkit-scrollbar {
+    background-color: #202324;
+    color: #aba499;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #454a4d;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #575e62;
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #484e51;
+}
+::-webkit-scrollbar-corner {
+    background-color: #181a1b;
+}
+::selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+::-moz-selection {
+    background-color: #004daa !important;
+    color: #e8e6e3 !important;
+}
+
+/* Invert Style */
+.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, embed[type="application/pdf"] {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}
+
+/* Variables Style */
+:root {
+   --dark-neutral-background: #131516;
+   --dark-neutral-text: #d8d4cf;
+   --dark-selection-background: #004daa;
+   --dark-selection-text: #e8e6e3;
+}
+
+/* Modified CSS */
+* {
+    background-image: initial;
+    background-color: initial;
+    outline-color: initial;
+    border-color: initial;
+}
+ol,
+ul {
+    list-style-image: initial;
+}
+body {
+    color: rgb(232, 230, 227);
+    background-image: initial;
+    background-color: rgb(31, 34, 35);
+}
+a {
+    color: rgb(232, 230, 227);
+    text-decoration-color: initial;
+}
+a:hover,
+a:focus {
+    color: rgb(255, 117, 26);
+    text-decoration-color: initial;
+}
+.button,
+.pagi-load a,
+.up-second li a,
+.usp-edit a,
+.qq-upload-button,
+button:not(.color-btn):not([class*="fr"]), html input[type="button"], input[type="reset"], input[type="submit"],
+.meta-fav a,
+.usp-btn a {
+    background-color: rgb(204, 82, 0);
+    color: rgb(232, 230, 227);
+}
+.button:hover,
+.up-second li a:hover,
+.usp-edit a:hover,
+.qq-upload-button:hover,
+.pagi-load a:hover,
+.usp-btn a:hover,
+button:not(.color-btn):hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover,
+.meta-fav a:hover {
+    background-color: rgb(204, 125, 0);
+    color: rgb(232, 230, 227); 
+}
+button:active, html input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px inset; 
+}
+input[type="text"], input[type="password"] {
+    color: rgb(232, 230, 227);
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgb(40, 43, 45) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.2) 1px 1px 3px 0px inset;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+select {
+    border-color: rgb(56, 61, 63);
+    background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
+}
+textarea {
+    border-color: rgb(56, 61, 63);
+    background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
+    box-shadow: rgb(40, 43, 45) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.5) 1px 1px 3px 0px inset;
+}
+.img-box,
+.img-wide,
+.img-resp-h,
+.img-resp-v,
+.img-resp-sq {
+    background-color: rgb(0, 0, 0);
+}
+.header {
+    background-color: rgb(2, 2, 2);
+    color: rgb(232, 230, 227);
+}
+.footer {
+    border-top-color: rgb(179, 71, 0);
+    background-color: rgb(2, 2, 2);
+    color: rgb(232, 230, 227);
+}
+.pages-bg {
+    background-color: rgb(24, 26, 27);
+}
+#gotop, #switchtheme {
+    background-color: rgb(24, 26, 27);
+    color: rgb(164, 164, 164);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+}
+.hd-menu > li > a {
+    color: rgb(232, 230, 227);
+}
+.hd-menu .fa {
+    color: rgb(255, 117, 26);
+}
+.hd-menu li.menuactive > a,
+.hd-menu > li > a:hover {
+    background-color: rgb(51, 55, 58);
+    color: rgb(232, 230, 227);
+}
+.hidden-menu {
+    background-color: rgb(24, 26, 27);
+    color: rgb(211, 207, 201);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 30px;
+}
+.hidden-tabs {
+    background-color: rgb(31, 33, 35);
+}
+.hidden-tabs li.current {
+    background-color: rgb(24, 26, 27);
+}
+.hidden-tabs li:hover {
+    background-color: rgb(40, 43, 45);
+}
+.hidden-tabs a {
+    color: rgb(211, 207, 201);
+}
+.hidden-ul a {
+    color: rgb(211, 207, 201);
+}
+.hidden-ul a:hover {
+    background-color: rgb(31, 33, 35);
+}
+.search-box a:hover {
+    text-shadow: rgb(24, 26, 27) 0px 0px 20px;
+}
+.search-field input,
+.search-field input:focus {
+    background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
+    box-shadow: none;
+}
+.search-field input:focus {
+    background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
+}
+.search-box button {
+    background-image: initial !important;
+    background-color: initial !important;
+    color: rgb(232, 230, 227) !important;
+}
+.ctrl-btns > li > a {
+    color: rgb(200, 195, 188);
+}
+.ctrl-btns > li > a:hover {
+    color: rgb(232, 230, 227);
+}
+.ctrl-btns > li.menuactive {
+    background-color: rgb(24, 26, 27);
+}
+.ctrl-btns > li.menuactive > a {
+    color: rgb(211, 207, 201);
+}
+.lb-menu {
+    background-color: rgb(24, 26, 27);
+}
+.lb-menu li > a {
+    color: rgb(211, 207, 201);
+}
+.lb-menu li > a:hover {
+    background-color: rgb(31, 33, 35);
+}
+.btn-login,
+.login-btns a {
+    background-color: rgb(51, 55, 58);
+    color: rgb(232, 230, 227) !important;
+}
+.btn-login:hover,
+.login-btns a:hover {
+    background-color: rgb(204, 82, 0);
+}
+.login-btns .fa {
+    color: rgb(255, 117, 26);
+}
+.login-box {
+    background-color: rgb(24, 26, 27);
+}
+.lb-check input + label::before {
+    border-color: rgb(62, 68, 70);
+    background-color: rgb(42, 40, 25);
+}
+.lb-check input:checked + label::before {
+    background-color: rgb(183, 4, 9);
+}
+.lb-soc {
+    background-color: rgb(42, 40, 25);
+}
+.sect-title .fa {
+    color: rgb(255, 117, 26);
+}
+.sect-link {
+    box-shadow: rgb(43, 46, 48) 0px 0px 0px 1px inset;
+}
+.sect-link:hover {
+    background-color: rgb(204, 82, 0);
+    color: rgb(232, 230, 227);
+}
+.speedbar {
+    border-bottom-color: rgb(56, 61, 63);
+    color: rgb(157, 157, 157);
+}
+.speedbar a:hover {
+    text-decoration-color: initial;
+}
+.speedbar .fa {
+    color: rgb(255, 117, 26);
+}
+.sect-wide {
+    background-color: rgb(24, 26, 27);
+}
+.sect-viewed {
+    background-image: url();
+    background-color: initial;
+}
+.vi-img::before,
+.si-img::before,
+.pi-img::before,
+.fposter::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%,
+    rgb(0, 0, 0) 100%);
+    background-color: initial;
+}
+.vi-rate {
+    color: rgb(232, 230, 227);
+}
+.vi-title {
+    color: rgb(232, 230, 227);
+}
+.video-more {
+    box-shadow: rgb(43, 46, 48) 0px 0px 0px 1px inset;
+}
+.video-more .vi-title {
+    color: rgb(232, 230, 227);
+}
+.video-more .img-resp-h {
+    background-color: inherit;
+}
+.video-more:hover {
+    background-color: rgb(204, 82, 0);
+}
+.video-more:hover .vi-title {
+    color: rgb(232, 230, 227);
+}
+.th-mask {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.th-mask span.fa {
+    color: rgb(232, 230, 227);
+    background-color: rgb(204, 82, 0);
+    box-shadow: rgb(24, 26, 27) 0px 0px 0px 0px;
+}
+.th-qual {
+    background-color: rgb(29, 111, 165);
+    color: rgb(232, 230, 227);
+}
+.th-qual2 {
+    background-color: rgb(92, 100, 104);
+    color: rgb(232, 230, 227);
+}
+.th-inf {
+    background-color: rgb(92, 100, 104);
+    color: rgb(232, 230, 227);
+    background-color: transparent;
+}
+.th-inf .fa {
+    box-shadow: rgb(24, 26, 27) 0px 0px 0px 1px inset;
+}
+.with-mask:hover .th-inf {
+    background-color: rgb(79, 86, 89);
+}
+.th-ctrl > a {
+    color: rgb(232, 230, 227);
+}
+.th-text {
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
+}
+.th-text::after {
+    border-color: rgb(48, 52, 54) rgb(48, 52, 54) transparent transparent;
+}
+.pop-left .th-text::after {
+    border-color: rgb(48, 52, 54) transparent transparent rgb(48, 52, 54);
+}
+.th-text > .fa {
+    color: rgb(200, 195, 188);
+}
+.th-text .finfo {
+    background-color: rgb(31, 34, 35);
+}
+#tooltip {
+    color: rgb(232, 230, 227);
+    background-color: rgba(0, 0, 0, 0.65);
+}
+#tooltip::after {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: rgba(140, 130, 115, 0.65);
+}
+#tooltip.top::after {
+    border-top-color: transparent;
+    border-bottom-color: rgb(134, 125, 110);
+}
+.site-desc {
+    color: rgb(174, 174, 174);
+    background-color: rgb(24, 26, 27);
+}
+.site-desc h1,
+.site-desc h2,
+.site-desc h3 {
+    color: rgb(232, 230, 227);
+}
+.site-desc a {
+    text-decoration-color: initial;
+    color: rgb(255, 117, 26);
+}
+.footer::before {
+    background-image: url("images/logoflix.png");
+    background-color: initial;
+}
+.footer a:not(:hover) {
+    color: rgb(232, 230, 227);
+}
+.navigation a,
+.navigation span,
+.pagination span,
+.pagination a,
+.pnext a,
+.pprev a,
+.pprev > span,
+.pnext > span {
+    background-color: rgb(24, 26, 27);
+}
+.navigation span,
+.pagination span,
+.pagi-nav a:hover {
+    background-color: rgb(204, 82, 0);
+    color: rgb(232, 230, 227);
+}
+.navigation span.nav_ext {
+    background-color: rgb(31, 34, 35);
+    color: rgb(200, 195, 188);
+}
+.pagi-nav a:hover {
+    background-color: rgb(204, 82, 0);
+    color: rgb(232, 230, 227);
+}
+.fright h1::before {
+    box-shadow: rgb(204, 82, 0) 0px 0px 0px 2px inset;
+    color: rgb(255, 117, 26);
+}
+.subtitle .fa {
+    color: rgb(255, 117, 26);
+}
+.fusers {
+    border-top-color: rgb(56, 61, 63);
+    border-bottom-color: rgb(56, 61, 63);
+}
+.fbtn .fa {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.to-trailer {
+    background-color: rgb(162, 33, 20);
+    color: rgb(232, 230, 227);
+}
+.to-view {
+    background-color: rgb(51, 55, 58);
+    color: rgb(232, 230, 227);
+}
+.fbtn:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px 0px;
+}
+.fr-title {
+    color: rgb(255, 117, 26);
+}
+.fr-count {
+    background-color: rgb(31, 34, 35);
+    box-shadow: rgb(40, 43, 45) 0px 0px 0px 5px inset;
+}
+.fr-count > div {
+    color: rgb(255, 117, 26);
+}
+.fr-count > div div {
+    color: rgb(167, 160, 148);
+}
+.finfo22 li:nth-child(2n+1) {
+    background-color: rgb(23, 36, 39);
+}
+.finfo a {
+    text-decoration-color: initial;
+    color: rgb(255, 117, 26);
+}
+.fplayer {
+    background-color: rgb(13, 14, 14);
+}
+.fplayer .tabs-sel span {
+    color: rgb(232, 230, 227);
+}
+.fplayer .tabs-sel span.current {
+    background-color: rgb(204, 82, 0);
+    color: rgb(232, 230, 227);
+}
+.fplayer .tabs-sel span:not(.current):hover {
+    color: rgb(255, 117, 26);
+}
+.fplayer .yx-share {
+    color: rgb(232, 230, 227);
+}
+.sers-img {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 10px -10px;
+}
+.sers-subt {
+    color: rgb(164, 164, 164);
+}
+.sers-meta {
+    border-top-color: rgb(179, 71, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(232, 230, 227);
+}
+.fcols3 h1 {
+    background-color: rgb(2, 2, 2);
+    color: rgb(232, 230, 227);
+}
+.fcols4 {
+    background-color: rgb(2, 2, 2);
+    color: rgb(232, 230, 227);
+}
+.full-text {
+    color: rgb(174, 174, 174);
+}
+.full-text a {
+    text-decoration-color: initial;
+    color: rgb(255, 117, 26);
+}
+.full-text a:hover {
+    text-decoration-color: initial;
+}
+.full-text > ul li {
+    list-style-image: initial;
+}
+.full-text > ol li {
+    list-style-image: initial;
+}
+.full-text table tr td {
+    border-color: rgb(48, 52, 54);
+}
+.full-text table tr:nth-child(2n+1) {
+    background-color: rgb(40, 43, 45);
+}
+.full-text222 table tr:nth-child(1) {
+    color: rgb(232, 230, 227);
+    background-color: rgb(2, 121, 176) !important;
+}
+.full-text table img {
+    border-color: initial;
+}
+.attach {
+    background-color: rgb(30, 32, 33);
+}
+.attach .download-link {
+    background-image: initial;
+    background-color: rgb(2, 121, 176);
+    color: rgb(232, 230, 227) !important;
+    text-decoration-color: initial !important;
+}
+.dcont {
+    border-color: rgb(56, 61, 63);
+}
+.polltitle {
+    background-color: rgb(30, 32, 33);
+}
+.full-taglist a {
+    color: rgb(122, 156, 195);
+}
+.add-comm-form {
+    border-color: rgb(24, 82, 97);
+    background-color: rgb(38, 42, 43);
+}
+.ac-av {
+    background-image: url();
+    background-color: rgb(13, 14, 14);
+}
+.mass_comments_action {
+    background-color: rgb(31, 34, 35);
+}
+.last-comm-link a {
+    text-decoration-color: initial;
+    color: rgb(255, 117, 26);
+}
+.comm-right {
+    background-color: rgb(31, 34, 35);
+}
+.comm-one > span:nth-child(4) {
+    color: rgb(164, 164, 164);
+}
+.comm-one > span {
+    color: rgb(232, 230, 227);
+}
+.comm-author a {
+    text-decoration-color: initial;
+}
+.rate3-comm a {
+    color: rgb(123, 202, 79);
+}
+.rate3-comm a:last-child {
+    color: rgb(241, 100, 110);
+}
+.rate3-comm > span > span.ratingtypeplus {
+    color: rgb(82, 254, 77);
+}
+.rate3-comm > span > span.ratingplus {
+    color: rgb(191, 237, 70);
+}
+.rate3-comm > span > span.ratingminus {
+    color: rgb(255, 35, 35);
+}
+.comm-two {
+    color: rgb(174, 174, 174);
+}
+.signature {
+    border-top-color: rgb(62, 68, 70);
+    color: rgb(164, 164, 164);
+}
+.comm-three a {
+    color: rgb(164, 164, 164);
+}
+.owl-carousel {
+    -webkit-tap-highlight-color: transparent;
+}
+.owl-carousel .owl-video-wrapper {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.owl-carousel .owl-video-play-icon {
+    background-color: rgb(24, 26, 27);
+}
+.owl-nav {
+    box-shadow: rgb(43, 46, 48) 0px 0px 0px 1px inset;
+}
+.owl-prev {
+    border-right-color: rgb(57, 62, 64);
+}
+.owl-prev:hover,
+.owl-next:hover {
+    background-color: rgb(204, 82, 0);
+    color: rgb(232, 230, 227);
+}
+.owl-dot {
+    background-color: rgb(40, 43, 45);
+}
+.owl-dot.active {
+    background-color: rgb(156, 0, 13);
+}
+.side-panel {
+    background-color: rgb(2, 2, 2);
+}
+.close-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.side-panel > li > a {
+    color: rgb(232, 230, 227);
+    border-bottom-color: rgb(129, 120, 106);
+}
+.side-panel .hidden-tabs li.current {
+    background-color: rgb(24, 26, 27);
+}
+@media screen and (max-width: 1220px) {
+    .btn-menu {
+        background-color: rgb(204, 82, 0);
+        color: rgb(232, 230, 227);
+    }
+}
+.mediablock a {
+    color: rgb(232, 230, 227);
+}
+.one-s {
+    background-image: url();
+    background-color: transparent;
+}
+.mediablock .rat-kp {
+    color: rgb(232, 230, 227);
+    background-image: url(images/kp-icon.png);
+    background-color: initial;
+    outline-color: initial !important;
+}
+.mediablock .rat-imdb {
+    color: rgb(232, 230, 227);
+    background-image: url();
+    background-color: initial;
+    outline-color: initial !important;
+}
+.sez-wr > span {
+    color: rgb(255, 117, 26);
+}
+.fdescr .fa.fa-question-circle-o div {
+    background-image: initial;
+    background-color: rgb(186, 60, 0);
+    color: rgb(232, 230, 227);
+}
+.pleft a .fa,
+.pright a .fa {
+    background-color: rgb(0, 0, 0);
+    color: rgb(211, 207, 201);
+}
+.pleft .ser-p,
+.pright .ser-p {
+    background-color: rgb(142, 5, 12);
+    color: rgb(232, 230, 227);
+}
+.pleft a:hover .fa,
+.pright a:hover .fa {
+    background-color: rgb(61, 33, 0);
+}
+.th-ctrl-fav .fa,
+.th-ctrl a {
+    color: rgb(233, 88, 73);
+}
+.th-ctrl a {
+    border-color: initial;
+}
+#nav-load a {
+    background-image: initial;
+    background-color: rgb(204, 82, 0);
+    color: rgb(232, 230, 227);
+}
+@media screen and (max-width: 1220px) {
+    .hidden-menu {
+        background-color: rgb(13, 14, 14);
+        color: rgb(232, 230, 227);
+    }
+    .hidden-ul a {
+        color: rgb(232, 230, 227);
+    }
+    .hidden-ul a:hover {
+        background-color: initial;
+    }
+}
+.released {
+    color: rgb(255, 26, 26);
+}
+.slice-masked::before {
+    background-image: linear-gradient(rgba(24, 26, 27, 0) 0%,
+    rgb(31, 34, 35) 100%);
+    background-color: initial;
+}
+.fdesc .slice-masked::before {
+    background-image: linear-gradient(rgba(24, 26, 27, 0) 0%,
+    rgb(24, 26, 27) 100%);
+    background-color: initial;
+}
+.slice-btn span {
+    text-decoration-color: initial;
+    box-shadow: rgb(53, 57, 59) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.1) 2px 3px 3px 0px;
+}
+.pgs-player-block {
+    background-image: url();
+    background-color: rgb(0, 0, 0);
+    color: rgb(232, 230, 227);
+}
+.go-online {
+    background-image: initial;
+    background-color: rgb(30, 90, 135);
+}
+.iw-contextMenu {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px !important;
+    border-color: rgb(63, 68, 71) !important;
+}
+.dark-mode .iw-contextMenu,
+.TnITTtw-dark-mode.iw-contextMenu,
+.TnITTtw-dark-mode .iw-contextMenu {
+    border-color: rgb(102, 95, 84) !important;
+}
+.iw-cm-menu {
+    background-image: initial !important;
+    background-color: rgb(24, 26, 27) !important;
+    color: rgb(232, 230, 227) !important;
+}
+.dark-mode .iw-cm-menu,
+.TnITTtw-dark-mode.iw-cm-menu,
+.TnITTtw-dark-mode .iw-cm-menu {
+    background-image: initial !important;
+    background-color: rgb(61, 66, 69) !important;
+    color: rgb(232, 230, 227) !important;
+}
+.iw-cm-menu li {
+    list-style-image: initial !important;
+    border-bottom-color: rgb(63, 68, 71) !important;
+}
+.dark-mode .iw-cm-menu li,
+.TnITTtw-dark-mode .iw-cm-menu li {
+    border-bottom-color: rgb(102, 95, 84) !important;
+}
+.iw-cm-menu li:last-child {
+    border-bottom-color: initial !important;
+}
+.iw-mOverlay {
+    background-image: initial !important;
+    background-color: rgb(24, 26, 27) !important;
+}
+.iw-mSelected {
+    background-color: rgb(29, 32, 33) !important;
+}
+.dark-mode .iw-mSelected,
+.TnITTtw-dark-mode .iw-mSelected {
+    background-color: rgb(77, 84, 87) !important;
+}
+.iw-cm-arrow-right {
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: rgb(140, 130, 115) !important;
+}
+.dark-mode .iw-cm-arrow-right,
+.TnITTtw-dark-mode .iw-cm-arrow-right {
+    border-left-color: rgb(48, 52, 54) !important;
+}
+.fa-border {
+    border-color: rgb(53, 57, 59);
+}
+.fa-inverse {
+    color: rgb(232, 230, 227);
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+.fr-element,
+.fr-element:focus {
+    outline-color: transparent;
+}
+.fr-box.fr-basic .fr-element {
+    color: rgb(232, 230, 227); 
+}
+.fr-element {
+    background-image: initial; background-color: initial; 
+}
+.fr-element [contenteditable="true"] {
+    outline-color: transparent;
+}
+.fr-box a.fr-floating-btn {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: rgb(52, 153, 232);
+    outline-color: initial;
+    border-color: initial;
+}
+.fr-box a.fr-floating-btn svg {
+    fill: rgb(52, 153, 232);
+}
+.fr-box a.fr-floating-btn:hover {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+.fr-box a.fr-floating-btn:hover svg {
+    fill: rgb(52, 153, 232);
+}
+iframe.fr-iframe {
+    border-color: initial;
+}
+.fr-wrapper .fr-placeholder {
+    color: rgb(178, 172, 162);
+}
+.fr-wrapper::selection {
+    background-image: initial;
+    background-color: rgb(45, 49, 51);
+    color: rgb(232, 230, 227);
+}
+.fr-box.fr-basic .fr-wrapper {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    border-color: initial;
+}
+.fr-box.fr-basic.fr-top .fr-wrapper {
+    border-top-color: initial;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.fr-box.fr-basic.fr-bottom .fr-wrapper {
+    border-bottom-color: initial;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 3px,
+    rgba(0, 0, 0, 0.16) 0px -1px 1px 1px;
+}
+@media (min-width: 992px) {
+    .fr-box.fr-document .fr-wrapper {
+        background-image: initial;
+        background-color: rgb(33, 36, 37);
+    }
+    .fr-box.fr-document .fr-wrapper .fr-element {
+        background-image: initial;
+        background-color: rgb(24, 26, 27);
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    }
+    .fr-box.fr-document .fr-wrapper .fr-element hr {
+        background-image: initial;
+        background-color: rgb(33, 36, 37);
+        outline-color: initial;
+        border-color: initial;
+    }
+}
+.fr-tooltip {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 1px;
+    background-image: initial;
+    background-color: rgb(26, 28, 29);
+    color: rgb(232, 230, 227);
+}
+.fr-toolbar .fr-command.fr-btn,
+.fr-popup .fr-command.fr-btn {
+    background-image: initial;
+    background-color: initial;
+    color: rgb(211, 207, 201);
+    outline-color: initial;
+    border-color: initial;
+    text-decoration-color: initial;
+}
+.fr-toolbar .fr-command.fr-btn span.fr-sr-only,
+.fr-popup .fr-command.fr-btn span.fr-sr-only {
+    border-color: initial;
+}
+.fr-toolbar .fr-command.fr-btn.fr-active,
+.fr-popup .fr-command.fr-btn.fr-active {
+    color: rgb(52, 153, 232);
+    background-image: initial;
+    background-color: initial;
+}
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active,
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active {
+    color: rgb(211, 207, 201);
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover,
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover,
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus,
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus {
+    background-image: initial !important;
+    background-color: rgb(47, 51, 53) !important;
+    color: rgb(211, 207, 201) !important;
+}
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus::after {
+    border-top-color: rgb(129, 120, 106) !important;
+}
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: rgb(129, 120, 106);
+}
+.fr-toolbar .fr-command.fr-btn.fr-disabled,
+.fr-popup .fr-command.fr-btn.fr-disabled {
+    color: rgb(190, 185, 176);
+}
+.fr-toolbar .fr-command.fr-btn.fr-disabled::after,
+.fr-popup .fr-command.fr-btn.fr-disabled::after {
+    border-top-color: rgb(67, 72, 75) !important;
+}
+.fr-toolbar.fr-disabled .fr-btn,
+.fr-popup.fr-disabled .fr-btn,
+.fr-toolbar.fr-disabled .fr-btn.fr-active,
+.fr-popup.fr-disabled .fr-btn.fr-active {
+    color: rgb(190, 185, 176);
+}
+.fr-toolbar.fr-disabled .fr-btn.fr-dropdown::after,
+.fr-popup.fr-disabled .fr-btn.fr-dropdown::after,
+.fr-toolbar.fr-disabled .fr-btn.fr-active.fr-dropdown::after,
+.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown::after {
+    border-top-color: rgb(67, 72, 75);
+}
+.fr-desktop .fr-command:hover,
+.fr-desktop .fr-command:focus,
+.fr-desktop .fr-command.fr-btn-hover,
+.fr-desktop .fr-command.fr-expanded {
+    outline-color: initial;
+    color: rgb(211, 207, 201);
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+.fr-desktop .fr-command:hover::after,
+.fr-desktop .fr-command:focus::after,
+.fr-desktop .fr-command.fr-btn-hover::after,
+.fr-desktop .fr-command.fr-expanded::after {
+    border-top-color: rgb(129, 120, 106) !important;
+}
+.fr-desktop .fr-command.fr-selected {
+    color: rgb(211, 207, 201);
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.fr-desktop .fr-command.fr-active:hover,
+.fr-desktop .fr-command.fr-active:focus,
+.fr-desktop .fr-command.fr-active.fr-btn-hover,
+.fr-desktop .fr-command.fr-active.fr-expanded {
+    color: rgb(52, 153, 232);
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+.fr-desktop .fr-command.fr-active.fr-selected {
+    color: rgb(52, 153, 232);
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.fr-desktop .fr-command.fr-disabled:hover,
+.fr-desktop .fr-command.fr-disabled:focus,
+.fr-desktop .fr-command.fr-disabled.fr-selected {
+    background-image: initial;
+    background-color: initial;
+}
+.fr-desktop.fr-disabled .fr-command:hover,
+.fr-desktop.fr-disabled .fr-command:focus,
+.fr-desktop.fr-disabled .fr-command.fr-selected {
+    background-image: initial;
+    background-color: initial;
+}
+.fr-toolbar.fr-mobile .fr-command.fr-blink,
+.fr-popup.fr-mobile .fr-command.fr-blink {
+    background-image: initial;
+    background-color: initial;
+}
+.fr-command.fr-btn.fr-options.fr-btn-hover,
+.fr-command.fr-btn.fr-options:hover,
+.fr-command.fr-btn.fr-options:focus {
+    border-left-color: rgb(49, 54, 56);
+}
+.fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+}
+.fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a {
+    color: inherit;
+    text-decoration-color: initial;
+}
+.fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-active {
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-disabled {
+    color: rgb(190, 185, 176);
+}
+.fr-command.fr-btn.fr-active + .fr-dropdown-menu {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 1px;
+}
+.fr-modal {
+    color: rgb(211, 207, 201);
+}
+.fr-modal .fr-modal-wrapper {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 8px,
+    rgba(0, 0, 0, 0.14) 0px 4px 3px 1px;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgb(129, 120, 106);
+}
+.fr-modal .fr-modal-wrapper .fr-modal-head {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 1px;
+    border-bottom-color: initial;
+}
+.fr-modal .fr-modal-wrapper .fr-modal-head .fr-modal-close {
+    color: rgb(211, 207, 201);
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
+    outline-color: initial;
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command {
+    color: rgb(52, 153, 232);
+    text-decoration-color: initial;
+    border-color: initial;
+    background-image: initial;
+    background-color: initial;
+    outline-color: initial;
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:hover,
+.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:focus {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+    color: rgb(52, 153, 232);
+}
+.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:active {
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+    color: rgb(52, 153, 232);
+}
+.fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+.fr-overlay {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.fr-popup {
+    color: rgb(211, 207, 201);
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgb(129, 120, 106);
+}
+.fr-popup .fr-input-focus {
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+}
+.fr-popup.fr-above {
+    border-top-color: initial;
+    border-bottom-color: rgb(129, 120, 106);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 3px,
+    rgba(0, 0, 0, 0.16) 0px -1px 1px 1px; 
+}
+.fr-popup .fr-input-line input[type="text"],
+.fr-popup .fr-input-line textarea {
+    border-top-color: initial;
+    border-right-color: initial;
+    border-left-color: initial;
+    border-bottom-color: rgb(67, 72, 75);
+    color: rgb(211, 207, 201);
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0); 
+}
+.fr-popup .fr-input-line input[type="text"]:focus,
+.fr-popup .fr-input-line textarea:focus {
+    border-bottom-color: rgb(18, 93, 159);
+}
+.fr-popup .fr-input-line input + label,
+.fr-popup .fr-input-line textarea + label {
+    color: rgba(232, 230, 227, 0);
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+}
+.fr-popup .fr-input-line input.fr-not-empty:focus + label,
+.fr-popup .fr-input-line textarea.fr-not-empty:focus + label {
+    color: rgb(52, 153, 232);
+}
+.fr-popup .fr-input-line input.fr-not-empty + label,
+.fr-popup .fr-input-line textarea.fr-not-empty + label {
+    color: rgb(152, 143, 129);
+}
+.fr-popup input,
+.fr-popup textarea {
+    outline-color: initial;
+}
+.fr-popup .fr-buttons {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    border-bottom-color: initial;
+}
+.fr-popup .fr-action-buttons button.fr-command {
+    color: rgb(52, 153, 232);
+    text-decoration-color: initial;
+    border-color: initial;
+    background-image: initial;
+    background-color: initial;
+    outline-color: initial;
+}
+.fr-popup .fr-action-buttons button.fr-command:hover,
+.fr-popup .fr-action-buttons button.fr-command:focus {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+    color: rgb(52, 153, 232);
+}
+.fr-popup .fr-action-buttons button.fr-command:active {
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+    color: rgb(52, 153, 232);
+}
+.fr-popup .fr-checkbox span {
+    border-color: rgb(129, 120, 106);
+}
+.fr-popup .fr-checkbox input {
+    border-color: initial;
+}
+.fr-popup .fr-checkbox input:checked + span {
+    background-image: initial;
+    background-color: rgb(21, 106, 181);
+    border-color: rgb(18, 93, 159);
+}
+.fr-popup .fr-checkbox input:focus + span {
+    border-color: rgb(18, 93, 159);
+}
+.fr-popup .fr-arrow {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(129, 120, 106);
+}
+.fr-popup.fr-above .fr-arrow {
+    border-bottom-color: initial;
+    border-top-color: rgb(129, 120, 106);
+}
+.fr-toolbar {
+    color: rgb(211, 207, 201);
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgb(129, 120, 106);
+}
+.fr-toolbar.fr-inline .fr-arrow {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(129, 120, 106);
+}
+.fr-toolbar.fr-inline.fr-above {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 3px,
+    rgba(0, 0, 0, 0.16) 0px -1px 1px 1px;
+    border-bottom-color: rgb(129, 120, 106);
+    border-top-color: initial;
+}
+.fr-toolbar.fr-inline.fr-above .fr-arrow {
+    border-bottom-color: initial;
+    border-top-color: inherit;
+}
+.fr-toolbar.fr-top {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.fr-toolbar.fr-bottom {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.fr-separator {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+span.fr-sr-only {
+    border-color: initial;
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+.fr-element table td.fr-selected-cell,
+.fr-element table th.fr-selected-cell {
+    border-color: rgb(18, 93, 159);
+}
+.fr-table-resizer div {
+    border-right-color: rgb(18, 93, 159);
+}
+.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button {
+    background-color: rgb(21, 106, 181);
+    color: rgb(232, 230, 227);
+}
+.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button:hover {
+    background-color: rgb(18, 87, 149);
+    color: rgb(232, 230, 227);
+}
+.fr-popup .fr-table-size .fr-select-table-size > span {
+    background-image: initial;
+    background-color: initial;
+}
+.fr-popup .fr-table-size .fr-select-table-size > span > span {
+    border-color: rgb(58, 62, 65);
+}
+.fr-popup .fr-table-size .fr-select-table-size > span.hover {
+    background-image: initial;
+    background-color: initial;
+}
+.fr-popup .fr-table-size .fr-select-table-size > span.hover > span {
+    background-image: initial;
+    background-color: rgba(21, 106, 181, 0.3);
+    border-color: rgb(18, 93, 159);
+}
+.fr-popup .fr-table-colors > span:focus {
+    outline-color: rgb(129, 120, 106);
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+.fr-line-breaker {
+    border-top-color: rgb(18, 93, 159);
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+textarea.fr-code {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
+    outline-color: initial;
+}
+.fr-box.fr-code-view.fr-inline {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.fr-box.fr-inline .fr-command.fr-btn.html-switch {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: rgb(211, 207, 201);
+    outline-color: initial;
+    border-color: initial;
+    text-decoration-color: initial;
+}
+.fr-box.fr-inline .fr-command.fr-btn.html-switch.fr-desktop:hover {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+.fr-box .fr-counter {
+    color: rgb(200, 195, 188);
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(54, 58, 60);
+    border-left-color: rgb(54, 58, 60);
+}
+.fr-box.fr-rtl .fr-counter {
+    border-left-color: initial;
+    border-right-color: rgb(54, 58, 60);
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+.fr-popup .fr-colors-tabs {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.fr-popup .fr-colors-tabs .fr-colors-tab {
+    color: rgb(211, 207, 201);
+}
+.fr-popup .fr-colors-tabs .fr-colors-tab:hover,
+.fr-popup .fr-colors-tabs .fr-colors-tab:focus {
+    color: rgb(52, 153, 232); 
+}
+.fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]::after {
+    background-image: initial;
+    background-color: rgb(21, 106, 181);
+}
+.fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
+    color: rgb(52, 153, 232);
+}
+.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command {
+    background-color: rgb(21, 106, 181);
+    color: rgb(232, 230, 227) !important;
+}
+.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command:hover {
+    background-color: rgb(18, 87, 149);
+    color: rgb(232, 230, 227);
+}
+.fr-popup .fr-separator + .fr-colors-tabs {
+    box-shadow: none;
+}
+.fr-popup .fr-color-set > span .fr-selected-color {
+    color: rgb(232, 230, 227);
+}
+.fr-popup .fr-color-set > span:hover,
+.fr-popup .fr-color-set > span:focus {
+    outline-color: rgb(129, 120, 106);
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+.fr-image-resizer {
+    border-color: rgb(18, 93, 159);
+}
+.fr-image-resizer .fr-handler {
+    background-image: initial;
+    background-color: rgb(21, 106, 181);
+    border-color: rgb(48, 52, 54);
+}
+.fr-popup .fr-image-upload-layer {
+    border-color: rgb(67, 72, 75);
+}
+.fr-popup .fr-image-upload-layer:hover {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+.fr-popup .fr-image-upload-layer.fr-drop {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+    border-color: rgb(18, 93, 159);
+}
+.fr-popup .fr-image-progress-bar-layer > div.fr-loader {
+    background-image: initial;
+    background-color: rgb(45, 49, 51);
+}
+.fr-popup .fr-image-progress-bar-layer > div.fr-loader span {
+    background-image: initial;
+    background-color: rgb(21, 106, 181);
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+.fr-drag-helper {
+    background-image: initial;
+    background-color: rgb(21, 106, 181);
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+.fr-element .fr-video::after {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0);
+}
+.fr-element .fr-video > * {
+    border-color: initial;
+}
+.fr-box .fr-video-resizer {
+    border-color: rgb(18, 93, 159);
+}
+.fr-box .fr-video-resizer .fr-handler {
+    background-image: initial;
+    background-color: rgb(21, 106, 181);
+    border-color: rgb(48, 52, 54);
+}
+.fr-popup .fr-video-upload-layer {
+    border-color: rgb(67, 72, 75);
+}
+.fr-popup .fr-video-upload-layer:hover {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+.fr-popup .fr-video-upload-layer.fr-drop {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+    border-color: rgb(18, 93, 159);
+}
+.fr-popup .fr-video-progress-bar-layer > div.fr-loader {
+    background-image: initial;
+    background-color: rgb(45, 49, 51);
+}
+.fr-popup .fr-video-progress-bar-layer > div.fr-loader span {
+    background-image: initial;
+    background-color: rgb(21, 106, 181);
+}
+.hide-by-clipping {
+    border-color: initial;
+}
+.gray-theme.fr-box.fr-basic .fr-element {
+    color: rgb(232, 230, 227);
+}
+.gray-theme.fr-box a.fr-floating-btn {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: rgb(87, 239, 255);
+    border-color: initial;
+}
+.gray-theme.fr-box a.fr-floating-btn svg {
+    fill: rgb(87, 239, 255);
+}
+.gray-theme.fr-box a.fr-floating-btn:hover {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.fr-box a.fr-floating-btn:hover svg {
+    fill: rgb(87, 239, 255);
+}
+.gray-theme .fr-wrapper .fr-placeholder {
+    color: rgb(178, 172, 162);
+}
+.gray-theme .fr-wrapper::selection {
+    background-image: initial;
+    background-color: rgb(45, 49, 51);
+    color: rgb(232, 230, 227);
+}
+.gray-theme.fr-box.fr-basic .fr-wrapper {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    border-color: initial;
+}
+.gray-theme.fr-box.fr-basic.fr-top .fr-wrapper {
+    border-top-color: initial;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.gray-theme.fr-box.fr-basic.fr-bottom .fr-wrapper {
+    border-bottom-color: initial;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 3px,
+    rgba(0, 0, 0, 0.16) 0px -1px 1px 1px;
+}
+@media (min-width: 992px) {
+    .gray-theme .fr-box.fr-document .fr-wrapper .fr-element {
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+        rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    }
+}
+.gray-theme.fr-box .fr-counter {
+    color: rgb(200, 195, 188);
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    border-top-color: rgb(54, 58, 60);
+    border-left-color: rgb(54, 58, 60);
+}
+.gray-theme.fr-box.fr-rtl .fr-counter {
+    border-right-color: rgb(54, 58, 60);
+}
+.gray-theme textarea.fr-code {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
+}
+.gray-theme.fr-box.fr-code-view.fr-inline {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.gray-theme.fr-box.fr-inline .fr-command.fr-btn.html-switch {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: rgb(190, 184, 176);
+    outline-color: initial;
+    border-color: initial;
+}
+.gray-theme.fr-box.fr-inline .fr-command.fr-btn.html-switch.fr-desktop:hover {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.fr-popup .fr-colors-tabs {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.gray-theme.fr-popup .fr-colors-tabs .fr-colors-tab {
+    color: rgb(190, 184, 176);
+}
+.gray-theme.fr-popup .fr-colors-tabs .fr-colors-tab:hover,
+.gray-theme.fr-popup .fr-colors-tabs .fr-colors-tab:focus {
+    color: rgb(87, 239, 255); 
+}
+.gray-theme.fr-popup .fr-colors-tabs .fr-colors-tab[data-param1="background"]::after {
+    background-image: initial;
+    background-color: rgb(0, 121, 134);
+}
+.gray-theme.fr-popup .fr-colors-tabs .fr-colors-tab.fr-selected-tab {
+    color: rgb(87, 239, 255);
+}
+.gray-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command {
+    background-color: rgb(0, 121, 134);
+}
+.gray-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button.fr-command:hover {
+    background-color: rgb(0, 84, 93);
+}
+.gray-theme.fr-popup .fr-color-set > span .fr-selected-color {
+    color: rgb(232, 230, 227);
+}
+.gray-theme.fr-popup .fr-color-set > span:hover,
+.gray-theme.fr-popup .fr-color-set > span:focus {
+    outline-color: rgb(118, 110, 97);
+}
+.gray-theme .fr-drag-helper {
+    background-image: initial;
+    background-color: rgb(0, 121, 134);
+}
+.gray-theme.fr-popup .fr-link:focus {
+    outline-color: initial;
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.fr-popup .fr-file-upload-layer {
+    border-color: rgb(67, 73, 75);
+}
+.gray-theme.fr-popup .fr-file-upload-layer:hover {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.fr-popup .fr-file-upload-layer.fr-drop {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-popup .fr-file-progress-bar-layer > div.fr-loader {
+    background-image: initial;
+    background-color: rgb(29, 78, 84);
+}
+.gray-theme.fr-popup .fr-file-progress-bar-layer > div.fr-loader span {
+    background-image: initial;
+    background-color: rgb(0, 121, 134);
+}
+.gray-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table tr {
+    border-color: initial;
+}
+.gray-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table tbody tr {
+    border-bottom-color: rgb(54, 58, 60);
+}
+.gray-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-help-modal table tbody td:first-child {
+    color: rgb(154, 145, 132);
+}
+.gray-theme .fr-image-resizer {
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme .fr-image-resizer .fr-handler {
+    background-image: initial;
+    background-color: rgb(0, 121, 134);
+    border-color: rgb(48, 52, 54);
+}
+.gray-theme.fr-popup .fr-image-upload-layer {
+    border-color: rgb(67, 73, 75);
+}
+.gray-theme.fr-popup .fr-image-upload-layer:hover {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.fr-popup .fr-image-upload-layer.fr-drop {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-popup .fr-image-progress-bar-layer > div.fr-loader {
+    background-image: initial;
+    background-color: rgb(29, 78, 84);
+}
+.gray-theme.fr-popup .fr-image-progress-bar-layer > div.fr-loader span {
+    background-image: initial;
+    background-color: rgb(0, 121, 134);
+}
+.gray-theme.fr-modal-head .fr-modal-tags a {
+    color: rgb(87, 239, 255);
+}
+.gray-theme.fr-modal-head .fr-modal-tags a.fr-selected-tag {
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.gray-themediv.fr-modal-body div.fr-image-list div.fr-image-container {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.gray-themediv.fr-modal-body div.fr-image-list div.fr-image-container.fr-image-deleting::after {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.gray-themediv.fr-modal-body div.fr-image-list div.fr-image-container.fr-image-deleting::before {
+    color: rgb(232, 230, 227);
+}
+.gray-themediv.fr-modal-body div.fr-image-list div.fr-image-container.fr-empty {
+    background-image: initial;
+    background-color: rgb(53, 57, 59);
+}
+.gray-themediv.fr-modal-body div.fr-image-list div.fr-image-container .fr-delete-img,
+.gray-themediv.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.gray-themediv.fr-modal-body div.fr-image-list div.fr-image-container .fr-delete-img {
+    background-image: initial;
+    background-color: rgb(147, 39, 38);
+    color: rgb(232, 230, 227);
+}
+.gray-themediv.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img {
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+    color: rgb(87, 239, 255);
+}
+.gray-theme.gray-theme.fr-desktop .fr-modal-wrapper .fr-modal-head .fr-modal-tags a:hover {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.gray-theme.fr-desktop .fr-modal-wrapper .fr-modal-head .fr-modal-tags a.fr-selected-tag {
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.gray-theme.gray-theme.fr-desktop .fr-modal-wrapper div.fr-modal-body div.fr-image-list div.fr-image-container .fr-delete-img:hover {
+    background-image: initial;
+    background-color: rgb(150, 53, 51);
+    color: rgb(232, 230, 227);
+}
+.gray-theme.gray-theme.fr-desktop .fr-modal-wrapper div.fr-modal-body div.fr-image-list div.fr-image-container .fr-insert-img:hover {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme .fr-line-breaker {
+    border-top-color: rgb(0, 185, 205);
+}
+.gray-theme .fr-qi-helper a.fr-btn.fr-floating-btn {
+    color: rgb(190, 184, 176);
+}
+.gray-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-special-characters-modal .fr-special-character {
+    border-color: rgb(62, 68, 70);
+}
+.gray-theme .fr-element table td.fr-selected-cell,
+.gray-theme .fr-element table th.fr-selected-cell {
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme .fr-table-resizer div {
+    border-right-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button {
+    background-color: rgb(0, 121, 134);
+}
+.gray-theme.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button:hover {
+    background-color: rgb(0, 84, 93);
+}
+.gray-theme.fr-popup .fr-table-size .fr-select-table-size > span > span {
+    border-color: rgb(58, 62, 65);
+}
+.gray-theme.fr-popup .fr-table-size .fr-select-table-size > span.hover > span {
+    background-image: initial;
+    background-color: rgba(0, 121, 134, 0.3);
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-popup .fr-table-colors > span:focus {
+    outline-color: rgb(118, 110, 97);
+}
+.gray-theme.fr-box .fr-video-resizer {
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-box .fr-video-resizer .fr-handler {
+    background-image: initial;
+    background-color: rgb(0, 121, 134);
+    border-color: rgb(48, 52, 54);
+}
+.gray-theme.fr-popup .fr-video-upload-layer {
+    border-color: rgb(67, 73, 75);
+}
+.gray-theme.fr-popup .fr-video-upload-layer:hover {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.fr-popup .fr-video-upload-layer.fr-drop {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-popup .fr-video-progress-bar-layer > div.fr-loader {
+    background-image: initial;
+    background-color: rgb(29, 78, 84);
+}
+.gray-theme.fr-popup .fr-video-progress-bar-layer > div.fr-loader span {
+    background-image: initial;
+    background-color: rgb(0, 121, 134); 
+}
+.gray-theme .fr-view span[style~="color:"] a {
+    color: inherit;
+}
+.gray-theme .fr-view table.fr-alternate-rows tbody tr:nth-child(2n) {
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+}
+.gray-theme .fr-view table td,
+.gray-theme .fr-view table th {
+    border-color: rgb(58, 62, 65);
+}
+.gray-theme .fr-view table th {
+    background-image: initial;
+    background-color: rgb(38, 41, 43); 
+}
+.gray-theme .fr-view[dir="rtl"] blockquote {
+    border-right-color: rgb(76, 43, 143); 
+}
+.gray-theme .fr-view[dir="rtl"] blockquote blockquote {
+    border-color: rgb(0, 170, 191); 
+}
+.gray-theme .fr-view[dir="rtl"] blockquote blockquote blockquote {
+    border-color: rgb(55, 132, 58);
+}
+.gray-theme .fr-view blockquote {
+    border-left-color: rgb(76, 43, 143);
+    color: rgb(130, 92, 206);
+}
+.gray-theme .fr-view blockquote blockquote {
+    border-color: rgb(0, 170, 191);
+    color: rgb(56, 232, 255);
+}
+.gray-theme .fr-view blockquote blockquote blockquote {
+    border-color: rgb(55, 132, 58);
+    color: rgb(107, 193, 111);
+}
+.gray-theme .fr-view .fr-class-highlighted {
+    background-color: rgb(204, 204, 0);
+}
+.gray-theme.fr-box .fr-embedly-resizer {
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-modal .fr-modal-wrapper .fr-modal-body .fr-font-awesome-modal .fr-font-awesome-title {
+    border-bottom-color: rgb(52, 57, 59);
+}
+.gray-theme .tui-editor-cancel-btn {
+    background-color: rgb(24, 26, 27);
+    border-color: rgb(62, 68, 70);
+}
+.gray-theme .tui-editor-save-btn {
+    color: rgb(232, 230, 227);
+}
+.gray-theme .sc-cm-holder > .sc-cm {
+    border-top-color: rgb(67, 72, 75) !important;
+}
+.gray-theme .sc-cm__item_dropdown:hover > a,
+.gray-theme .sc-cm a:hover {
+    background-color: rgb(38, 41, 43) !important;
+}
+.gray-theme .sc-cm__item_active > a,
+.gray-theme .sc-cm__item_active > a:hover,
+.gray-theme .sc-cm a:active,
+.gray-theme .sc-cm a:focus {
+    background-color: rgb(47, 51, 53) !important;
+}
+.gray-theme .sc-cm-holder > .sc-cm::before {
+    background-color: rgb(38, 41, 43) !important;
+}
+.gray-theme .fr-tooltip {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 1px;
+    background-image: initial;
+    background-color: rgb(26, 28, 29);
+    color: rgb(232, 230, 227);
+}
+.gray-theme.fr-toolbar .fr-command.fr-btn,
+.gray-theme.fr-popup .fr-command.fr-btn {
+    color: rgb(190, 184, 176);
+    outline-color: initial;
+    border-color: initial;
+}
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-active,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-active {
+    color: rgb(87, 239, 255);
+    background-image: initial;
+    background-color: initial;
+}
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active {
+    color: rgb(190, 184, 176);
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover,
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus {
+    background-image: initial !important;
+    background-color: rgb(47, 51, 53) !important;
+    color: rgb(190, 184, 176) !important;
+}
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus::after,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus::after {
+    border-top-color: rgb(118, 110, 97) !important;
+}
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: rgb(118, 110, 97);
+}
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-disabled,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-disabled {
+    color: rgb(189, 184, 175);
+}
+.gray-theme.fr-toolbar .fr-command.fr-btn.fr-disabled::after,
+.gray-theme.fr-popup .fr-command.fr-btn.fr-disabled::after {
+    border-top-color: rgb(67, 73, 75) !important;
+}
+.gray-theme.fr-toolbar.fr-disabled .fr-btn,
+.gray-theme.fr-popup.fr-disabled .fr-btn,
+.gray-theme.fr-toolbar.fr-disabled .fr-btn.fr-active,
+.gray-theme.fr-popup.fr-disabled .fr-btn.fr-active {
+    color: rgb(189, 184, 175);
+}
+.gray-theme.fr-toolbar.fr-disabled .fr-btn.fr-dropdown::after,
+.gray-theme.fr-popup.fr-disabled .fr-btn.fr-dropdown::after,
+.gray-theme.fr-toolbar.fr-disabled .fr-btn.fr-active.fr-dropdown::after,
+.gray-theme.fr-popup.fr-disabled .fr-btn.fr-active.fr-dropdown::after {
+    border-top-color: rgb(67, 73, 75);
+}
+.gray-theme.fr-desktop .fr-command:hover,
+.gray-theme.fr-desktop .fr-command:focus,
+.gray-theme.fr-desktop .fr-command.fr-btn-hover,
+.gray-theme.fr-desktop .fr-command.fr-expanded {
+    outline-color: initial;
+    color: rgb(190, 184, 176);
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.fr-desktop .fr-command:hover::after,
+.gray-theme.fr-desktop .fr-command:focus::after,
+.gray-theme.fr-desktop .fr-command.fr-btn-hover::after,
+.gray-theme.fr-desktop .fr-command.fr-expanded::after {
+    border-top-color: rgb(118, 110, 97) !important;
+}
+.gray-theme.fr-desktop .fr-command.fr-selected {
+    color: rgb(190, 184, 176);
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.gray-theme.fr-desktop .fr-command.fr-active:hover,
+.gray-theme.fr-desktop .fr-command.fr-active:focus,
+.gray-theme.fr-desktop .fr-command.fr-active.fr-btn-hover,
+.gray-theme.fr-desktop .fr-command.fr-active.fr-expanded {
+    color: rgb(87, 239, 255);
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.fr-desktop .fr-command.fr-active.fr-selected {
+    color: rgb(87, 239, 255);
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.gray-theme.fr-toolbar.fr-mobile .fr-command.fr-blink,
+.gray-theme.fr-popup.fr-mobile .fr-command.fr-blink {
+    background-image: initial;
+    background-color: initial;
+}
+.gray-theme .fr-command.fr-btn.fr-options.fr-btn-hover,
+.gray-theme .fr-command.fr-btn.fr-options:hover,
+.gray-theme .fr-command.fr-btn.fr-options:focus {
+    border-left-color: rgb(49, 54, 56);
+}
+.gray-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+}
+.gray-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a {
+    color: inherit;
+}
+.gray-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-active {
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+}
+.gray-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-disabled {
+    color: rgb(189, 184, 175);
+}
+.gray-theme .fr-command.fr-btn.fr-active + .fr-dropdown-menu {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 1px;
+}
+.gray-theme.fr-modal {
+    color: rgb(190, 184, 176);
+}
+.gray-theme.fr-modal .fr-modal-wrapper {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 8px,
+    rgba(0, 0, 0, 0.14) 0px 4px 3px 1px;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgb(67, 72, 75);
+}
+.gray-theme.fr-modal .fr-modal-wrapper .fr-modal-head {
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.14) 0px 2px 2px 1px;
+    border-bottom-color: initial;
+}
+.gray-theme.fr-modal .fr-modal-wrapper .fr-modal-head .fr-modal-close {
+    color: rgb(190, 184, 176);
+}
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body:focus {
+    outline-color: initial;
+}
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command {
+    color: rgb(87, 239, 255);
+}
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:hover,
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:focus {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+    color: rgb(87, 239, 255);
+}
+.gray-theme.fr-modal .fr-modal-wrapper div.fr-modal-body button.fr-command:active {
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+    color: rgb(87, 239, 255);
+}
+.gray-theme.gray-theme.fr-desktop .fr-modal-wrapper .fr-modal-head i:hover {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.gray-theme.fr-overlay {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.gray-theme.fr-popup {
+    color: rgb(190, 184, 176);
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgb(67, 72, 75);
+}
+.gray-theme.fr-popup .fr-input-focus {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+.gray-theme.fr-popup.fr-above {
+    border-top-color: initial;
+    border-bottom-color: rgb(67, 72, 75);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 3px,
+    rgba(0, 0, 0, 0.16) 0px -1px 1px 1px; 
+}
+.gray-theme.fr-popup .fr-input-line input[type="text"],
+.gray-theme.fr-popup .fr-input-line textarea {
+    border-bottom-color: rgb(67, 72, 75);
+    color: rgb(190, 184, 176); 
+}
+.gray-theme.fr-popup .fr-input-line input[type="text"]:focus,
+.gray-theme.fr-popup .fr-input-line textarea:focus {
+    border-bottom-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-popup .fr-input-line input + label,
+.gray-theme.fr-popup .fr-input-line textarea + label {
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+}
+.gray-theme.fr-popup .fr-input-line input.fr-not-empty:focus + label,
+.gray-theme.fr-popup .fr-input-line textarea.fr-not-empty:focus + label {
+    color: rgb(87, 239, 255);
+}
+.gray-theme.fr-popup .fr-input-line input.fr-not-empty + label,
+.gray-theme.fr-popup .fr-input-line textarea.fr-not-empty + label {
+    color: rgb(152, 143, 129);
+}
+.gray-theme.fr-popup .fr-buttons {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    border-bottom-color: initial;
+}
+.gray-theme.fr-popup .fr-action-buttons button.fr-command {
+    color: rgb(87, 239, 255);
+}
+.gray-theme.fr-popup .fr-action-buttons button.fr-command:hover,
+.gray-theme.fr-popup .fr-action-buttons button.fr-command:focus {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+    color: rgb(87, 239, 255);
+}
+.gray-theme.fr-popup .fr-action-buttons button.fr-command:active {
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+    color: rgb(87, 239, 255);
+}
+.gray-theme.fr-popup .fr-checkbox span {
+    border-color: rgb(118, 110, 97);
+}
+.gray-theme.fr-popup .fr-checkbox input:checked + span {
+    background-image: initial;
+    background-color: rgb(0, 121, 134);
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-popup .fr-checkbox input:focus + span {
+    border-color: rgb(0, 185, 205);
+}
+.gray-theme.fr-popup .fr-arrow {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(67, 72, 75);
+}
+.gray-theme.fr-popup.fr-above .fr-arrow {
+    border-bottom-color: initial;
+    border-top-color: rgb(67, 72, 75);
+}
+.gray-theme.fr-toolbar {
+    color: rgb(190, 184, 176);
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgb(67, 72, 75);
+}
+.gray-theme.fr-toolbar.fr-inline .fr-arrow {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: rgb(67, 72, 75);
+}
+.gray-theme.fr-toolbar.fr-inline.fr-above {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -1px 3px,
+    rgba(0, 0, 0, 0.16) 0px -1px 1px 1px;
+    border-bottom-color: rgb(67, 72, 75);
+    border-top-color: initial;
+}
+.gray-theme.fr-toolbar.fr-inline.fr-above .fr-arrow {
+    border-bottom-color: initial;
+    border-top-color: inherit;
+}
+.gray-theme.fr-toolbar.fr-top {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.gray-theme.fr-toolbar.fr-bottom {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.16) 0px 1px 1px 1px;
+}
+.gray-theme .fr-separator {
+    background-image: initial;
+    background-color: rgb(35, 38, 40);
+}
+.CodeMirror-scrollbar-filler,
+.CodeMirror-gutter-filler {
+    background-color: rgb(24, 26, 27);
+}
+.CodeMirror-gutters {
+    border-right-color: rgb(58, 62, 65);
+    background-color: rgb(29, 31, 32);
+}
+.CodeMirror-linenumber {
+    color: rgb(168, 160, 149);
+}
+.CodeMirror-guttermarker {
+    color: rgb(232, 230, 227);
+}
+.CodeMirror-guttermarker-subtle {
+    color: rgb(168, 160, 149);
+}
+.CodeMirror div.CodeMirror-cursor {
+    border-left-color: rgb(140, 130, 115);
+}
+.CodeMirror div.CodeMirror-secondarycursor {
+    border-left-color: rgb(66, 71, 74);
+}
+.CodeMirror.cm-fat-cursor div.CodeMirror-cursor {
+    border-color: initial;
+    background-image: initial;
+    background-color: rgb(44, 127, 16);
+}
+.cm-animate-fat-cursor {
+    border-color: initial;
+}
+.cm-tab {
+    text-decoration-color: inherit;
+}
+.CodeMirror-ruler {
+    border-left-color: rgb(62, 68, 70);
+}
+.cm-s-default .cm-keyword {
+    color: rgb(237, 109, 255);
+}
+.cm-s-default .cm-atom {
+    color: rgb(119, 102, 238);
+}
+.cm-s-default .cm-number {
+    color: rgb(140, 236, 197);
+}
+.cm-s-default .cm-def {
+    color: rgb(51, 125, 255);
+}
+.cm-s-default .cm-variable-2 {
+    color: rgb(102, 186, 255);
+}
+.cm-s-default .cm-variable-3 {
+    color: rgb(109, 255, 200);
+}
+.cm-s-default .cm-comment {
+    color: rgb(255, 170, 85);
+}
+.cm-s-default .cm-string {
+    color: rgb(238, 90, 90);
+}
+.cm-s-default .cm-string-2 {
+    color: rgb(255, 102, 26);
+}
+.cm-s-default .cm-meta {
+    color: rgb(178, 172, 162);
+}
+.cm-s-default .cm-qualifier {
+    color: rgb(178, 172, 162);
+}
+.cm-s-default .cm-builtin {
+    color: rgb(136, 85, 255);
+}
+.cm-s-default .cm-bracket {
+    color: rgb(157, 157, 157);
+}
+.cm-s-default .cm-tag {
+    color: rgb(140, 255, 121);
+}
+.cm-s-default .cm-attribute {
+    color: rgb(82, 145, 255);
+}
+.cm-s-default .cm-header {
+    color: rgb(51, 125, 255);
+}
+.cm-s-default .cm-quote {
+    color: rgb(97, 255, 97);
+}
+.cm-s-default .cm-hr {
+    color: rgb(168, 160, 149);
+}
+.cm-s-default .cm-link {
+    color: rgb(82, 145, 255);
+}
+.cm-negative {
+    color: rgb(223, 81, 81);
+}
+.cm-positive {
+    color: rgb(106, 222, 106);
+}
+.cm-link {
+    text-decoration-color: initial;
+}
+.cm-strikethrough {
+    text-decoration-color: initial;
+}
+.cm-s-default .cm-error {
+    color: rgb(255, 26, 26);
+}
+.cm-invalidchar {
+    color: rgb(255, 26, 26);
+}
+div.CodeMirror span.CodeMirror-matchingbracket {
+    color: rgb(26, 255, 26);
+}
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+    color: rgb(255, 49, 49);
+}
+.CodeMirror-matchingtag {
+    background-image: initial;
+    background-color: rgba(204, 120, 0, 0.3);
+}
+.CodeMirror-activeline-background {
+    background-image: initial;
+    background-color: rgb(30, 33, 34);
+}
+.CodeMirror {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227);
+}
+.CodeMirror-scroll {
+    outline-color: initial;
+}
+.CodeMirror-sizer {
+    border-right-color: transparent;
+}
+.CodeMirror pre {
+    background-image: initial;
+    background-color: transparent;
+}
+.CodeMirror div.CodeMirror-cursor {
+    border-right-color: initial;
+}
+.CodeMirror-selected {
+    background-image: initial;
+    background-color: rgb(45, 49, 51);
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background-image: initial;
+    background-color: rgb(40, 44, 45);
+}
+.cm-searching {
+    background-image: initial;
+    background-color: rgba(204, 204, 0, 0.4);
+}
+span.CodeMirror-selectedtext {
+    background-image: none;
+    background-color: initial;
+}
+.CodeMirror-search-match {
+    background-image: initial;
+    background-color: rgb(204, 172, 0);
+    border-top-color: rgb(179, 116, 0);
+    border-bottom-color: rgb(179, 116, 0);
+}
+.CodeMirror-dialog {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    color: rgb(200, 195, 188);
+}
+.CodeMirror-dialog-top {
+    border-bottom-color: rgb(53, 57, 59);
+}
+.CodeMirror-dialog-bottom {
+    border-top-color: rgb(53, 57, 59);
+}
+.CodeMirror-dialog input {
+    border-color: initial;
+    outline-color: initial;
+    background-image: initial;
+    background-color: transparent;
+    color: inherit;
+}
+.gray-theme.fr-toolbar,
+.gray-theme.fr-popup {
+    color: rgb(232, 230, 227);
+}
+.gray-theme.fr-toolbar .fr-command.fr-btn,
+.gray-theme.fr-popup .fr-command.fr-btn {
+    color: rgb(232, 230, 227); 
+}
+.gray-theme.fr-popup .fr-input-line input[type="text"],
+.gray-theme.fr-popup .fr-input-line textarea {
+    color: rgb(232, 230, 227);
+}
+.gray-theme.fr-popup.fr-desktop .fr-arrow {
+    border-bottom-color: rgb(129, 120, 106);
+}
+.gray-theme.fr-toolbar {
+    border-top-color: initial;
+}
+.gray-theme.fr-box.fr-basic.fr-top .fr-wrapper {
+    border-top-color: initial;
+}
+.gray-theme.fr-popup {
+    border-top-color: rgb(129, 120, 106);
+}
+.fr-view {
+    background-color: rgb(24, 26, 27);
+    color: rgb(232, 230, 227); 
+}
+.fr-popup .fr-input-line input[type="text"],
+.fr-popup .fr-input-line textarea {
+    box-shadow: none;
+}
+.fr-view a {
+    color: rgb(212, 87, 86);
+    text-decoration-color: initial;
+}
+.fr-view a:hover,
+.fr-view a:focus {
+    color: rgb(216, 103, 102);
+    text-decoration-color: initial;
+}
+.fr-view a:active,
+.fr-view a:hover,
+.fr-view a:focus {
+    outline-color: initial;
+}
+.gray-theme .fr-view table td,
+.gray-theme .fr-view table th {
+    border-color: rgb(58, 62, 65);
+}
+.gray-theme .fr-element table td.fr-selected-cell,
+.gray-theme .fr-element table th.fr-selected-cell {
+    border-color: rgb(0, 185, 205) !important;
+}
+.fr-view table {
+    border-color: initial;
+}
+.fr-view table td,
+.fr-view table th {
+    border-color: rgb(58, 62, 65);
+}
+.fr-view table th {
+    background-image: initial;
+    background-color: rgb(38, 41, 43);
+}
+.fr-view hr {
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-top-color: rgb(77, 83, 86);
+}
+.fr-view .quote,
+.fr-view blockquote {
+    color: rgb(157, 157, 157);
+    border-color: rgb(58, 62, 65);
+}
+.fr-view code,
+.fr-view pre {
+    color: rgb(232, 230, 227);
+    text-shadow: rgb(24, 26, 27) 0px 1px;
+}
+.fr-view pre code {
+    background-image: none;
+    background-color: initial;
+    border-color: initial;
+}
+.fr-view pre::selection,
+.fr-view pre::selection,
+.fr-view code::selection,
+.fr-view code::selection {
+    text-shadow: none;
+    background-image: initial;
+    background-color: rgb(46, 50, 52);
+}
+.fr-view pre {
+    background-image: initial;
+    background-color: rgb(40, 32, 26);
+}
+.fr-dropdown-menu .fr-text-bordered {
+    border-color: initial;
+}
+.fr-text-gray {
+    color: rgb(178, 172, 162) !important;
+}
+.fr-text-red {
+    color: rgb(245, 78, 66) !important;
+}
+.fr-text-blue {
+    color: rgb(51, 162, 244) !important;
+}
+.fr-text-green {
+    color: rgb(97, 186, 101) !important;
+}
+.fr-text-bordered {
+    border-top-color: rgb(129, 120, 106);
+    border-bottom-color: rgb(129, 120, 106);
+}
+img.fr-bordered {
+    border-color: rgb(58, 62, 65);
+}
+img.fr-shadows {
+    box-shadow: rgba(0, 0, 0, 0.29) 0px 1px 6px;
+}
+.fr-video > * {
+    border-color: initial;
+}
+table.fr-solid-borders td,
+table.fr-solid-borders th {
+    border-color: rgb(58, 62, 65) !important;
+}
+table.fr-dashed-borders td,
+table.fr-dashed-borders th {
+    border-color: rgb(58, 62, 65) !important;
+}
+table.fr-alternate-rows tbody tr:nth-child(2n) {
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+}
+table td.fr-red,
+table th.fr-red {
+    border-color: rgb(157, 19, 9) !important;
+}
+table td.fr-blue,
+table th.fr-blue {
+    border-color: rgb(9, 95, 163) !important;
+}
+table td.fr-green,
+table th.fr-green {
+    border-color: rgb(54, 125, 57) !important;
+}
+.dle_theme_dark .fr-box.fr-basic .fr-wrapper {
+    background-color: rgb(32, 35, 46);
+}
+.dle_theme_dark .gray-theme.fr-toolbar {
+    background-image: initial;
+    background-color: rgb(58, 66, 80);
+}
+.dle_theme_dark .gray-theme.fr-toolbar .fr-command.fr-btn,
+.dle_theme_dark .gray-theme.fr-popup .fr-command.fr-btn {
+    color: rgb(232, 230, 227);
+}
+.dle_theme_dark .gray-theme.fr-desktop .fr-command:hover,
+.dle_theme_dark .gray-theme.fr-desktop .fr-command:focus {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.dle_theme_dark .gray-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
+    background-image: initial;
+    background-color: rgb(54, 64, 86);
+}
+.dle_theme_dark .gray-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a {
+    color: rgb(199, 194, 187);
+}
+.dle_theme_dark .gray-theme .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a.fr-active {
+    background-image: initial;
+    background-color: rgba(24, 26, 27, 0.1);
+}
+.dle_theme_dark .gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown::after,
+.dle_theme_dark .gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown::after {
+    border-top-color: rgb(48, 52, 54);
+}
+.dle_theme_dark .gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active,
+.dle_theme_dark .gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active {
+    color: rgb(199, 194, 187);
+    background-color: rgb(42, 50, 66);
+}
+.dle_theme_dark .gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover,
+.dle_theme_dark .gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover,
+.dle_theme_dark .gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus,
+.dle_theme_dark .gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus {
+    background-image: initial !important;
+    background-color: rgb(42, 50, 66) !important;
+    color: rgb(199, 194, 187) !important;
+}
+.dle_theme_dark .gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.dle_theme_dark .gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:hover::after,
+.dle_theme_dark .gray-theme.fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active:focus::after,
+.dle_theme_dark .gray-theme.fr-popup .fr-command.fr-btn.fr-dropdown.fr-active:focus::after {
+    border-top-color: rgb(63, 68, 71) !important;
+}
+.dle_theme_dark .gray-theme.fr-desktop .fr-command:hover::after,
+.dle_theme_dark .gray-theme.fr-desktop .fr-command:focus::after {
+    border-top-color: rgb(48, 52, 54) !important;
+}
+.dle_theme_dark .gray-theme.fr-popup {
+    background-image: initial;
+    background-color: rgb(42, 50, 66);
+    border-top-color: rgb(80, 87, 91); 
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-input-line input[type="text"],
+.dle_theme_dark .gray-theme.fr-popup .fr-input-line textarea {
+    color: rgb(231, 229, 226);
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-input-line input + label,
+.dle_theme_dark .gray-theme.fr-popup .fr-input-line textarea + label {
+    color: rgb(189, 183, 175);
+    background-image: initial;
+    background-color: rgb(42, 50, 66);
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-input-line input.fr-not-empty:focus + label,
+.dle_theme_dark .gray-theme.fr-popup .fr-input-line textarea.fr-not-empty:focus + label {
+    color: rgb(199, 194, 187);
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-checkbox span {
+    border-color: rgb(48, 52, 54);
+}
+.dle_theme_dark .gray-theme.fr-toolbar,
+.dle_theme_dark .gray-theme.fr-popup {
+    color: rgb(231, 229, 226);
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-action-buttons button.fr-command {
+    color: rgb(199, 194, 187);
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-action-buttons button.fr-command:hover,
+.dle_theme_dark .gray-theme.fr-popup .fr-action-buttons button.fr-command:focus {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-input-focus {
+    background-image: initial;
+    background-color: rgb(42, 50, 66);
+}
+.dle_theme_dark .fr-view {
+    color: rgb(211, 207, 201);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.dle_theme_dark .gray-theme.fr-box.fr-basic .fr-element {
+    color: rgb(211, 207, 201);
+}
+.dle_theme_dark .gray-theme.fr-toolbar .fr-command.fr-btn.fr-active,
+.dle_theme_dark .gray-theme.fr-popup .fr-command.fr-btn.fr-active {
+    color: rgb(124, 199, 255);
+}
+.dle_theme_dark .gray-theme .fr-view table.fr-alternate-rows tbody tr:nth-child(2n) {
+    background-image: initial;
+    background-color: rgb(42, 50, 66);
+}
+.dle_theme_dark .fr-view a {
+    color: rgb(98, 183, 246);
+}
+.dle_theme_dark .fr-view pre {
+    background-image: initial;
+    background-color: rgb(42, 50, 66); 
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-input-line input[type="text"]:focus,
+.gray-theme.fr-popup .fr-input-line textarea:focus {
+    border-bottom-color: rgb(20, 93, 165);
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-checkbox input:checked + span {
+    background-image: initial;
+    background-color: rgb(20, 94, 168);
+    border-color: rgb(20, 93, 165);
+}
+.dle_theme_dark .fr-view code,
+.dle_theme_dark .fr-view pre {
+    color: rgb(211, 207, 201);
+    text-shadow: none;
+}
+.dle_theme_dark .gray-theme.fr-box .fr-counter {
+    color: rgb(211, 207, 201);
+    background-image: initial;
+    background-color: rgb(58, 66, 80);
+    border-top-color: rgba(48, 52, 54, 0.1);
+    border-left-color: rgba(48, 52, 54, 0.1);
+}
+.dle_theme_dark .gray-theme .fr-separator {
+    background-image: initial;
+    background-color: rgba(24, 26, 27, 0.1);
+}
+.dle_theme_dark .fr-text-bordered {
+    border-top-color: rgba(48, 52, 54, 0.1);
+    border-bottom-color: rgba(48, 52, 54, 0.1);
+}
+.dle_theme_dark .gray-theme.fr-popup .fr-colors-tabs .fr-colors-tab {
+    color: rgb(211, 207, 201);
+}
+.dle_theme_dark .CodeMirror-guttermarker {
+    color: rgb(211, 207, 201);
+}
+.dle_theme_dark .CodeMirror div.CodeMirror-cursor {
+    border-left-color: rgb(58, 62, 65);
+}
+.dle_theme_dark .CodeMirror {
+    color: rgb(211, 207, 201);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.dle_theme_dark .cm-tag {
+    color: rgb(224, 110, 119);
+}
+.dle_theme_dark .cm-attribute {
+    color: rgb(211, 158, 109);
+}
+.dle_theme_dark .cm-link {
+    color: rgb(156, 197, 126);
+    border-bottom-color: rgb(75, 111, 50);
+}
+.dle_theme_dark .cm-builtin {
+    color: rgb(224, 110, 119);
+}
+.dle_theme_dark .cm-keyword {
+    color: rgb(198, 120, 221);
+}
+.dle_theme_dark .cm-def {
+    color: rgb(228, 191, 120);
+}
+.dle_theme_dark .cm-atom {
+    color: rgb(211, 158, 109);
+}
+.dle_theme_dark .cm-number {
+    color: rgb(211, 158, 109);
+}
+.dle_theme_dark .cm-property {
+    color: rgb(98, 179, 239);
+}
+.dle_theme_dark .cm-qualifier {
+    color: rgb(211, 158, 109);
+}
+.dle_theme_dark .cm-variable {
+    color: rgb(224, 110, 119);
+}
+.dle_theme_dark .cm-variable-2 {
+    color: rgb(185, 179, 170);
+}
+.dle_theme_dark .cm-variable-3 {
+    color: rgb(228, 191, 120);
+}
+.dle_theme_dark .cm-string {
+    color: rgb(156, 197, 126);
+}
+.dle_theme_dark .cm-string-2 {
+    color: rgb(156, 197, 126);
+}
+.dle_theme_dark .cm-punctuation {
+    color: rgb(185, 179, 170);
+}
+.dle_theme_dark .cm-operator {
+    color: rgb(185, 179, 170);
+}
+.dle_theme_dark .cm-meta {
+    color: rgb(185, 179, 170);
+}
+.dle_theme_dark .cm-bracket {
+    color: rgb(185, 179, 170);
+}
+.dle_theme_dark .cm-comment {
+    color: rgb(168, 160, 149);
+}
+.dle_theme_dark .CodeMirror-gutters {
+    border-right-color: rgb(108, 100, 89);
+    background-color: rgb(22, 26, 34);
+}
+.dle_theme_dark .CodeMirror-selected {
+    background-image: initial;
+    background-color: rgb(42, 50, 66);
+}
+.gray-theme.fr-popup .fr-color-hex-layer .fr-action-buttons button,
+.gray-theme.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button {
+    color: rgb(232, 230, 227);
+}
+.fr-view .title_quote {
+    color: rgb(157, 157, 157);
+    border-bottom-color: initial;
+    border-left-color: rgb(58, 62, 65);
+    border-top-color: rgb(58, 62, 65);
+    border-right-color: rgb(58, 62, 65);
+    background-color: rgb(33, 36, 37);
+}
+.dle_theme_dark .gray-theme.fr-desktop .fr-command:hover,
+.dle_theme_dark .gray-theme.fr-desktop .fr-command:focus,
+.dle_theme_dark .gray-theme.fr-desktop .fr-command.fr-btn-hover,
+.dle_theme_dark .gray-theme.fr-desktop .fr-command.fr-expanded {
+    background-image: initial;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+.dle_theme_dark .gray-theme .fr-command.fr-btn.fr-options.fr-btn-hover,
+.dle_theme_dark .gray-theme .fr-command.fr-btn.fr-options:hover,
+.dle_theme_dark .gray-theme .fr-command.fr-btn.fr-options:focus {
+    border-left-color: rgba(48, 52, 54, 0.1);
+}
+.dle_theme_dark .gray-theme.fr-popup.fr-desktop .fr-arrow {
+    border-bottom-color: rgb(80, 87, 91);
+}
+.dle_theme_dark .gray-theme.fr-desktop .fr-command:hover::after,
+.dle_theme_dark .gray-theme.fr-desktop .fr-command:focus::after,
+.dle_theme_dark .gray-theme.fr-desktop .fr-command.fr-btn-hover::after,
+.dle_theme_dark .gray-theme.fr-desktop .fr-command.fr-expanded::after {
+    border-top-color: rgb(48, 52, 54) !important;
+}
+.dle_theme_dark .gray-theme .fr-wrapper ::selection {
+    background-image: initial;
+    background-color: rgb(0, 87, 173);
+    color: rgb(232, 230, 227);
+    text-shadow: none;
+}
+.fr-text-gray {
+    color: rgb(178, 172, 162) !important;
+}
+.fr-text-red {
+    color: rgb(245, 78, 66) !important;
+}
+.fr-text-blue {
+    color: rgb(51, 162, 244) !important;
+}
+.fr-text-green {
+    color: rgb(97, 186, 101) !important;
+}
+.fr-text-bordered {
+    border-top-color: rgb(129, 120, 106);
+    border-bottom-color: rgb(129, 120, 106);
+}
+img.fr-bordered {
+    border-color: rgb(58, 62, 65);
+}
+img.fr-shadows {
+    box-shadow: rgba(0, 0, 0, 0.29) 0px 1px 6px;
+}
+.fr-video > * {
+    border-color: initial;
+}
+table.fr-solid-borders td,
+table.fr-solid-borders th {
+    border-color: rgb(58, 62, 65) !important;
+}
+table.fr-dashed-borders td,
+table.fr-dashed-borders th {
+    border-color: rgb(58, 62, 65) !important;
+}
+table.fr-alternate-rows tbody tr:nth-child(2n) {
+    background-image: initial;
+    background-color: rgb(30, 32, 33);
+}
+table td.fr-red,
+table th.fr-red {
+    border-color: rgb(157, 19, 9) !important;
+}
+table td.fr-blue,
+table th.fr-blue {
+    border-color: rgb(9, 95, 163) !important;
+}
+table td.fr-green,
+table th.fr-green {
+    border-color: rgb(54, 125, 57) !important;
+}
+.berrors {
+    background-image: initial;
+    background-color: rgb(90, 60, 4);
+    color: rgb(191, 133, 102);
+}
+.berrors a {
+    color: rgb(194, 109, 99);
+    text-decoration-color: initial;
+}
+.vote-title {
+    background-color: rgb(30, 33, 34);
+}
+.vote label::before {
+    background-color: rgb(53, 57, 59);
+}
+.vote input:checked + label::before {
+    box-shadow: rgb(150, 26, 77) 0px 0px 0px 4px inset;
+    background-color: rgb(150, 26, 77);
+}
+.vote label:hover {
+    color: rgb(239, 87, 91);
+}
+button.vres,
+button.vall {
+    background-image: initial !important;
+    background-color: rgb(31, 34, 35) !important;
+    color: rgb(205, 201, 195) !important;
+}
+button.vres:hover,
+button.vall:hover {
+    background-image: initial !important;
+    background-color: rgb(48, 82, 119) !important;
+    color: rgb(232, 230, 227) !important;
+}
+.vote-buts2 .fa {
+    color: rgb(205, 201, 195);
+}
+#pollbox {
+    border-bottom-color: rgb(56, 61, 63);
+}
+.tableform td,
+.tableform th {
+    border-top-color: rgb(56, 61, 63);
+}
+.tableform tr:first-child td,
+.tableform tr:first-child th {
+    border-color: initial;
+}
+.checkbox {
+    color: rgb(156, 148, 135);
+}
+.imp > label::after {
+    color: rgb(234, 100, 48); 
+}
+.form-buts input[type="button"],
+.form-buts a {
+    box-shadow: none;
+}
+.findrelated {
+    background-image: initial;
+    background-color: rgb(82, 82, 0);
+    border-color: rgb(75, 82, 85);
+}
+.form-textarea > label {
+    background-color: rgb(51, 55, 58);
+    color: rgb(232, 230, 227);
+}
+.up-img {
+    border-color: rgb(48, 52, 54);
+    box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 5px 0px;
+}
+.us-prof {
+    border-color: rgb(42, 52, 70);
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
+}
+.usp-left {
+    background-color: rgb(26, 28, 29);
+    color: rgb(232, 230, 227);
+}
+.offline,
+.online {
+    color: rgb(232, 230, 227);
+    background-color: rgb(74, 80, 83);
+}
+.online {
+    background-image: initial;
+    background-color: rgb(122, 165, 22);
+}
+.usp-av {
+    border-color: rgb(123, 114, 101);
+}
+.usp-activ {
+    background-color: rgb(38, 42, 43);
+    color: rgb(232, 230, 227);
+}
+.usp-activ > div + div {
+    border-left-color: rgb(129, 120, 106);
+}
+.usp-name {
+    border-bottom-color: rgb(52, 57, 59);
+    background-color: rgb(28, 30, 31);
+}
+.usp-group span {
+    color: rgb(255, 109, 29) !important;
+}
+.usp-meta li a {
+    text-decoration-color: initial;
+}
+.usp-meta li:nth-child(2n+1) {
+    background-color: rgb(30, 32, 33);
+}
+#searchtable fieldset {
+    border-color: rgb(59, 64, 67);
+}
+fieldset legend {
+    color: rgb(166, 158, 146);
+}
+#searchtable select {
+    background-color: rgb(24, 26, 27);
+}
+.sres-wrap {
+    background-color: rgb(24, 26, 27);
+    border-color: rgb(56, 61, 63);
+}
+.sres-wrap:nth-child(2n) {
+    background-color: rgb(29, 32, 33);
+}
+.sres-wrap:hover {
+    border-color: rgb(3, 136, 184);
+    box-shadow: rgba(3, 130, 176, 0.5) 0px 0px 10px 0px;
+}
+.sres-text {
+    color: rgb(232, 230, 227);
+}
+.sres-text h2 {
+    color: rgb(132, 164, 186);
+}
+.sres-date {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(232, 230, 227);
+}
+.pm-menu a {
+    background-image: initial;
+    background-color: rgb(27, 40, 44);
+}
+.pm-menu a:hover {
+    background-image: initial;
+    background-color: rgb(51, 55, 58);
+    color: rgb(232, 230, 227);
+}
+.pm_progress_bar {
+    background-color: rgb(27, 40, 44);
+}
+.pm_progress_bar span {
+    background-image: initial;
+    background-color: rgb(167, 38, 3);
+}
+.pm,
+.userstop {
+    border-color: rgb(62, 68, 70);
+}
+.pm tr td,
+.userstop tr td {
+    border-color: rgb(62, 68, 70);
+}
+.pm tr:nth-child(1) {
+    background-color: rgb(51, 55, 58);
+    color: rgb(232, 230, 227);
+}
+.pm tr:nth-child(2n+2),
+.userstop tr:nth-child(2n+2) {
+    background-color: rgb(27, 30, 31);
+}
+#loading-layer {
+    background-color: transparent;
+}
+#loading-layer::before,
+#loading-layer2::after {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#loading-layer::before {
+    color: rgb(232, 230, 227);
+}
+#loading-layer2::after {
+    background-color: rgb(2, 117, 182);
+}
+.scriptcode,
+.title_spoiler,
+.text_spoiler {
+    background-image: initial;
+    background-color: rgb(32, 35, 37);
+    border-color: rgb(56, 61, 63);
+}
+.quote {
+    color: rgb(232, 230, 227);
+    background-color: rgb(30, 32, 33);
+}
+.quote::after {
+    color: rgb(200, 195, 188);
+}
+.title_spoiler img {
+    border-color: initial;
+}
+.scriptcode {
+    color: rgb(202, 238, 134);
+}
+.text_spoiler {
+    border-top-color: initial;
+}
+.hide {
+    background-color: rgb(32, 35, 37);
+    color: rgb(232, 230, 227);
+}
+.hide a {
+    text-decoration-color: initial;
+}
+.hide a:hover {
+    text-decoration-color: initial;
+}
+.inhide {
+    border-color: rgb(31, 66, 89);
+    background-color: rgb(24, 26, 27);
+}
+.calendar {
+    color: rgb(189, 183, 175);
+}
+.calendar td.day,
+.calendar td.day-active-v,
+.calendar th.workday {
+    border-color: rgb(54, 59, 61);
+    background-color: rgb(24, 26, 27);
+}
+.calendar td.weekday,
+.calendar td.day-active,
+.calendar th.weekday {
+    border-color: rgb(56, 61, 63);
+    background-color: rgb(33, 36, 37);
+}
+.day-active a,
+.day-active-v a {
+    color: rgb(129, 170, 204);
+}
+.calendar td.day-current {
+    background-image: initial;
+    background-color: rgb(182, 86, 2);
+}
+.day-current a,
+.day-current {
+    color: rgb(232, 230, 227) !important;
+}
+.archives {
+    color: rgb(129, 170, 204);
+}
+.archives:hover {
+    text-decoration-color: initial;
+}
+#dle_news_archive_link .archives {
+    color: rgb(232, 230, 227);
+}
+.unit-rating {
+    list-style-image: initial;
+    background-image: url();
+    background-color: initial;
+}
+.unit-rating li a {
+    text-decoration-color: initial;
+}
+.unit-rating li a:hover {
+    background-image: url();
+    background-color: initial;
+}
+.unit-rating li.current-rating {
+    background-image: url();
+    background-color: initial;
+}
+.mrating .unit-rating {
+    list-style-image: initial;
+    background-image: url();
+    background-color: initial;
+}
+.mrating .unit-rating li a {
+    text-decoration-color: initial;
+}
+.mrating .unit-rating li a:hover {
+    background-image: url();
+    background-color: initial;
+}
+.mrating .unit-rating li.current-rating {
+    background-image: url();
+    background-color: initial;
+}
+.bb-pane {
+    text-decoration-color: initial;
+    background-image: linear-gradient(rgb(27, 30, 31) 0%,
+    rgb(32, 35, 37) 100%);
+    background-color: initial;
+    border-color: rgb(56, 61, 63);
+    box-shadow: none !important;
+}
+.bb-btn {
+    border-color: rgb(56, 61, 63);
+    box-shadow: rgb(24, 26, 27) 0px 1px 2px inset;
+    background-image: linear-gradient(rgb(24, 26, 27) 0%,
+    rgb(32, 35, 37) 100%);
+    background-color: initial;
+}
+.bb-btn:hover {
+    background-image: linear-gradient(rgb(25, 27, 28) 0%,
+    rgb(38, 41, 43) 100%);
+    background-color: initial;
+}
+.bb-btn:active {
+    background-image: initial;
+    background-color: rgb(31, 33, 35);
+    border-color: rgb(62, 67, 69);
+    box-shadow: rgb(31, 33, 35) 0px 0px 5px inset;
+}
+.bb-btn {
+    outline-color: initial;
+}
+.bb-pane-dropdown {
+    list-style-image: initial;
+    border-color: rgba(140, 130, 115, 0.15);
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgb(45, 49, 51) 0px 1px 2px;
+}
+.bb-pane-dropdown > li > a {
+    color: rgb(200, 195, 188);
+}
+.bb-pane-dropdown > li > a:hover,
+.bb-pane-dropdown > li > a:focus {
+    text-decoration-color: initial;
+    color: rgb(208, 204, 198);
+    background-color: rgb(30, 32, 33);
+}
+.bb-pane-dropdown .color-palette div .color-btn {
+    border-color: rgb(48, 52, 54);
+}
+.quick-edit-textarea {
+    border-color: rgb(59, 64, 67);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px inset;
+}
+#dropmenudiv {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 0px 50px 0px;
+}
+#dropmenudiv a {
+    text-decoration-color: initial;
+}
+fieldset {
+    border-color: rgb(63, 68, 71);
+}
+.highslide-wrapper,
+.highslide-outline {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+}
+.highslide-image {
+    border-color: rgb(48, 52, 54);
+}
+.highslide-dimming {
+    background-color: rgb(0, 0, 0);
+}
+.highslide-html {
+    background-color: rgb(24, 26, 27);
+}
+.highslide-loading {
+    color: rgb(232, 230, 227);
+    text-decoration-color: initial;
+    border-color: rgb(48, 52, 54);
+    background-color: rgb(0, 0, 0);
+}
+a.highslide-full-expand {
+    background-image: url();
+    background-color: initial;
+}
+.highslide-caption {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+}
+.highslide-controls {
+    background-image: url();
+    background-color: initial;
+}
+.highslide-controls ul {
+    list-style-image: initial;
+    background-image: url();
+    background-color: initial;
+}
+.highslide-controls a {
+    background-image: url();
+    background-color: initial;
+    outline-color: initial;
+}
+.cloud-tags span a {
+    border-color: rgb(56, 61, 63);
+}
+.cloud-tags span a:hover {
+    background-color: rgb(48, 82, 119);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 0px;
+    color: rgb(232, 230, 227);
+}
+#searchsuggestions {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1.6em;
+}
+#searchsuggestions a,
+#searchsuggestions span.notfound {
+    text-decoration-color: initial;
+    border-bottom-color: rgb(56, 61, 63);
+}
+#searchsuggestions a {
+    color: rgb(189, 183, 175);
+}
+#searchsuggestions a:hover {
+    text-decoration-color: initial;
+    color: rgb(232, 230, 227);
+    background-color: rgb(51, 55, 58);
+}
+#searchsuggestions span.seperator a {
+    border-color: initial;
+    background-color: rgb(51, 55, 58);
+    color: rgb(232, 230, 227);
+}
+.ui-widget-overlay {
+    background-image: initial;
+    background-color: rgb(0, 0, 0);
+}
+.ui-dialog {
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 10px;
+}
+.ui-dialog-titlebar {
+    background-color: rgb(26, 28, 29);
+    border-bottom-color: rgb(179, 71, 0);
+}
+.ui-dialog-title {
+    color: rgb(232, 230, 227);
+}
+.ui-dialog .ui-dialog-content {
+    border-color: initial;
+}
+.ui-dialog .ui-dialog-buttonpane {
+    border-top-color: rgb(52, 57, 59);
+    background-color: rgb(28, 30, 31);
+}
+.ui-state-error {
+    border-color: rgb(182, 9, 9);
+    color: rgb(246, 63, 63);
+    background-image: initial !important;
+    background-color: rgb(60, 19, 3) !important;
+}
+.ui-icon-closethick::before {
+    color: rgb(232, 230, 227);
+}
+.voteprogress,
+.pollprogress {
+    background-image: linear-gradient(rgb(30, 32, 33),
+    rgb(27, 30, 31));
+    background-color: initial;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset;
+}
+.voteprogress span,
+.pollprogress span {
+    color: rgb(232, 230, 227);
+    text-shadow: rgba(0, 0, 0, 0.25) 0px -1px 0px;
+    background-image: linear-gradient(rgb(16, 124, 178),
+    rgb(3, 102, 152));
+    background-color: initial;
+}
+.voteprogress .vote2,
+span.poll1 {
+    background-image: linear-gradient(rgb(145, 19, 15),
+    rgb(157, 48, 42));
+    background-color: initial;
+}
+.voteprogress .vote3,
+span.poll2 {
+    background-image: linear-gradient(rgb(70, 131, 49),
+    rgb(85, 135, 69));
+    background-color: initial;
+}
+.voteprogress .vote4,
+span.poll3 {
+    background-image: linear-gradient(rgb(28, 115, 141),
+    rgb(41, 124, 148));
+    background-color: initial;
+}
+.voteprogress .vote5,
+span.poll4 {
+    background-image: linear-gradient(rgb(155, 92, 4),
+    rgb(198, 118, 5));
+    background-color: initial;
+}
+.ui-menu {
+    list-style-image: initial;
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    border-color: rgb(57, 62, 64);
+    color: rgb(211, 207, 201);
+}
+.ui-menu .ui-menu-item a {
+    text-decoration-color: initial;
+}
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    border-color: rgb(73, 79, 82);
+    color: rgb(183, 176, 167);
+}
+pre {
+    background-image: initial;
+    background-color: rgb(47, 51, 53);
+    color: rgb(210, 206, 200);
+    text-shadow: rgb(0, 0, 0) 0px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 15px inset;
+}
+pre .tag,
+pre.css .class,
+pre.css .id,
+pre.lisp .title,
+pre.nginx .title,
+pre .request,
+pre .status,
+pre .clojure .attribute {
+    color: rgb(223, 198, 158);
+}
+pre.django .template_tag,
+pre.django .variable,
+pre.django .filter .argument {
+    color: rgb(210, 206, 200);
+}
+pre .number,
+pre .date {
+    color: rgb(138, 207, 210);
+}
+pre.dos .envvar,
+pre.dos .stream,
+pre .variable,
+pre.apache .sqbracket {
+    color: rgb(234, 209, 167);
+}
+pre.dos .flow,
+pre.diff .change,
+pre.python .exception,
+pre.python .built_in,
+pre .literal,
+pre.tex .special {
+    color: rgb(235, 235, 156);
+}
+pre.diff .chunk,
+pre .subst {
+    color: rgb(161, 153, 141);
+}
+pre.dos .keyword,
+pre.python .decorator,
+pre .title,
+pre.haskell .type,
+pre.diff .header,
+pre.ruby .class .parent,
+pre.apache .tag,
+pre.nginx .built_in,
+pre.tex .command,
+pre .prompt {
+    color: rgb(237, 237, 132);
+}
+pre.dos .winutils,
+pre.ruby .symbol,
+pre.ruby .symbol .string,
+pre.ruby .string {
+    color: rgb(216, 154, 154);
+}
+pre.diff .deletion,
+pre .string,
+pre .tag .value,
+pre .preprocessor,
+pre .pragma,
+pre .built_in,
+pre.sql .aggregate,
+pre .javadoc,
+pre.smalltalk .class,
+pre.smalltalk .localvars,
+pre.smalltalk .array,
+pre.css .rules .value,
+pre .attr_selector,
+pre .pseudo,
+pre.apache .cbracket,
+pre.tex .formula,
+pre.coffeescript .attribute {
+    color: rgb(203, 145, 145);
+}
+pre .shebang,
+pre.diff .addition,
+pre .comment,
+pre.java .annotation,
+pre .template_comment,
+pre .pi,
+pre .doctype {
+    color: rgb(161, 153, 141);
+}
+#txtselect_marker {
+    background-image: url();
+    background-color: initial;
+}
+#marker-bar {
+    border-color: rgb(62, 68, 70);
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    box-shadow: rgb(53, 57, 59) 0px 0px 4px;
+}
+#marker-bar .masha-marker {
+    color: rgb(178, 172, 162);
+    border-bottom-color: rgb(72, 78, 81);
+}
+#marker-bar .masha-marker:hover {
+    color: rgb(236, 79, 57);
+    border-color: rgb(158, 33, 15);
+}
+.user_selection,
+.user_selection_true {
+    background-image: initial;
+    background-color: rgb(90, 125, 11);
+}
+.user_selection.hover a.txtsel_close,
+.user_selection_true.hover a.txtsel_close {
+    background-image: url();
+    background-color: initial;
+}
+#share-popup {
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+    border-color: rgb(72, 78, 81);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+}
+#share-popup .social ul {
+    list-style-image: initial;
+}
+#share-popup .social ul a {
+    text-decoration-color: initial;
+    color: rgb(178, 172, 162);
+}
+#share-popup .social ul a:hover {
+    text-decoration-color: initial;
+    color: rgb(236, 79, 57);
+}
+#share-popup .social a span {
+    background-image: url();
+    background-color: initial;
+}
+#share-popup .link {
+    border-top-color: rgb(59, 64, 66);
+}
+#share-popup .link span {
+    color: rgb(168, 160, 149);
+}
+.comments-tree-list {
+    list-style-image: initial;
+}
+.comments-tree-list .comments-tree-list::before {
+    color: rgb(157, 157, 157);
+}
+#dlefastreplycomments {
+    background-image: initial;
+    background-color: rgb(55, 52, 17);
+}
+.commentsreplyname {
+    border-color: rgb(66, 72, 74);
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+}
+.emoji {
+    border-color: initial;
+}
+.file-box {
+    border-color: rgb(69, 75, 78);
+    background-color: rgb(30, 32, 33);
+}
+.qq-upload-drop-area {
+    background-image: initial;
+    background-color: rgb(113, 0, 0);
+}
+.qq-upload-drop-area-active {
+    background-image: initial;
+    background-color: rgb(136, 0, 0);
+}
+.uploadedfile {
+    border-color: rgb(69, 75, 78);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
+    background-image: initial;
+    background-color: rgb(24, 26, 27);
+}
+.progress {
+    background-image: initial;
+    background-color: rgb(34, 36, 38);
+    box-shadow: rgb(24, 26, 27) 0px 1px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.2) 0px 1px 4px inset;
+}
+.progress .progress-bar {
+    color: rgb(232, 230, 227);
+    background-color: rgb(43, 102, 153);
+    box-shadow: none;
+}
+.progress-bar span {
+    border-color: initial;
+}
+.progress-blue {
+    background-image: linear-gradient(rgb(11, 66, 106) 0%,
+    rgb(14, 83, 134) 100%);
+    border-color: rgb(14, 90, 144);
+}
+.xfieldimagegallery {
+    list-style-image: initial;
+}
+.xfieldimagegallery li {
+    list-style-image: initial;
+}
+.xfieldimagegallery li img {
+    border-color: rgb(48, 52, 54);
+}
+.xfieldimagegallery li img:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 7px;
+}
+.xfieldsnote {
+    color: rgb(154, 145, 132);
+}
+.fa-border {
+    border-color: rgb(53, 57, 59);
+}
+.fa-inverse {
+    color: rgb(232, 230, 227);
+}
+.sr-only {
+    border-color: initial;
+}
+.tb_button {
+    border-right-color: rgb(81, 87, 91);
+    border-left-color: rgb(48, 52, 54);
+    border-bottom-color: rgb(48, 52, 54);
+}
+.tb_button.hover {
+    background-color: rgb(28, 30, 31) !important;
+}
+.ws_toolbar .ws_tb_btn {
+    border-color: rgb(112, 104, 92);
+}
+.tb_highlight {
+    background-color: rgb(204, 204, 0);
+}
+.tb_button {
+    border-right-color: rgb(81, 87, 91);
+    border-left-color: rgb(48, 52, 54);
+    border-bottom-color: rgb(48, 52, 54);
+}
+.tb_button.hover {
+    background-color: rgb(28, 30, 31) !important;
+}
+.ws_toolbar .ws_tb_btn {
+    border-color: rgb(112, 104, 92);
+}
+.tb_highlight {
+    background-color: rgb(204, 204, 0);
+}
+
+/* Override Style */
+.vimvixen-hint {
+    background-color: #7b5300 !important;
+    border-color: #d8b013 !important;
+    color: #f3e8c8 !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+
+.rating-emoji {
+	background: #111!important;
+}
+.rating-emoji-item-count{
+	color: rgb(255 255 255 / 50%)!important;
+}

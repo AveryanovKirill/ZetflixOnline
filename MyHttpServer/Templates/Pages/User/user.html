@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтр</title>
+    <style>
+        .xfsort-block {
+            display: flex;
+            gap: 10px;
+        }
+
+        .xfsort-select {
+            position: relative;
+        }
+
+        .xfsort-selected {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .xfsort-ul {
+            display: none;
+            position: absolute;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+
+            .xfsort-ul li {
+                padding: 10px;
+                cursor: pointer;
+            }
+
+                .xfsort-ul li:hover {
+                    background: #f0f0f0;
+                }
+
+        .xfsort-clear {
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="xfsort-block clearfix">
+        <div class="xfsort-select">
+            <div class="xfsort-selected">По умолчанию</div>
+            <ul class="xfsort-ul" data-field="default">
+                <li data-val="" class="active">По умолчанию</li>
+                <li data-val="news_read">По просмотрам</li>
+                <li data-val="rating">По рейтингу</li>
+                <li data-val="date">По дате добавления</li>
+            </ul>
+        </div>
+        <div class="xfsort-select">
+            <div class="xfsort-selected">Страна</div>
+            <ul class="xfsort-ul" data-field="starna">
+                <li data-val="" class="active">Страна</li>
+                <li data-val="США">США</li>
+                <li data-val="Великобритания">Великобритания</li>
+                <li data-val="Испания">Испания</li>
+                <li data-val="Италия">Италия</li>
+                <li data-val="Франция">Франция</li>
+                <li data-val="Канада">Канада</li>
+                <li data-val="Германия">Германия</li>
+                <li data-val="Турция">Турция</li>
+                <li data-val="Индия">Индия</li>
+                <li data-val="Корея">Корея</li>
+                <li data-val="Япония">Япония</li>
+            </ul>
+        </div>
+        <div class="xfsort-select">
+            <div class="xfsort-selected">Жанр</div>
+            <ul class="xfsort-ul" data-field="janr">
+                <li data-val="" class="active">Жанр</li>
+                <li data-val="биография">биография</li>
+                <li data-val="боевик">боевик</li>
+                <li data-val="вестерн">вестерн</li>
+                <li data-val="военный">военный</li>
+                <li data-val="детектив">детектив</li>
+                <li data-val="документальный">документальный</li>
+                <li data-val="драма">драма</li>
+                <li data-val="история">история</li>
+                <li data-val="комедия">комедия</li>
+                <li data-val="криминал">криминал</li>
+                <li data-val="мелодрама">мелодрама</li>
+                <li data-val="музыка">музыка</li>
+                <li data-val="мюзикл">мюзикл</li>
+                <li data-val="приключения">приключения</li>
+                <li data-val="семейный">семейный</li>
+                <li data-val="спорт">спорт</li>
+                <li data-val="триллер">триллер</li>
+                <li data-val="ужасы">ужасы</li>
+                <li data-val="фантастика">фантастика</li>
+                <li data-val="фэнтези">фэнтези</li>
+            </ul>
+        </div>
+        <div class="xfsort-select">
+            <div class="xfsort-selected">Год</div>
+            <ul class="xfsort-ul" data-field="god">
+                <li data-val="" class="active">Год</li>
+                <li data-val="2025">2025</li>
+                <li data-val="2024">2024</li>
+                <li data-val="2023">2023</li>
+                <li data-val="2022">2022</li>
+                <li data-val="2021">2021</li>
+                <li data-val="2020">2020</li>
+                <li data-val="2019">2019</li>
+                <li data-val="2018">2018</li>
+                <li data-val="2017">2017</li>
+                <li data-val="2016">2016</li>
+                <li data-val="2015">2015</li>
+                <li data-val="2014">2014</li>
+                <li data-val="2013">2013</li>
+                <li data-val="2012">2012</li>
+                <li data-val="2011">2011</li>
+                <li data-val="2010">2010</li>
+                <li data-val="2009">2009</li>
+                <li data-val="2008">2008</li>
+                <li data-val="2007">2007</li>
+                <li data-val="2006">2006</li>
+                <li data-val="2005">2005</li>
+                <li data-val="2004">2004</li>
+                <li data-val="2003">2003</li>
+                <li data-val="2002">2002</li>
+                <li data-val="2001">2001</li>
+                <li data-val="2000">2000</li>
+            </ul>
+        </div>
+        <div class="xfsort-clear" title="Сбросить выбранные значения">сбросить</div>
+    </div>
+
+    <div id="results">
+        <!-- Здесь будут отображаться отфильтрованные результаты -->
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const filters = document.querySelectorAll('.xfsort-select');
+            const results = document.getElementById('results');
+            const clearButton = document.querySelector('.xfsort-clear');
+            let currentOpenFilter = null;
+
+            filters.forEach(filter => {
+                filter.querySelector('.xfsort-selected').addEventListener('click', function (event) {
+                    event.preventDefault(); // Предотвращает обновление страницы
+                    const ul = this.nextElementSibling;
+
+                    // Если текущая секция уже открыта, закрыть её
+                    if (currentOpenFilter === ul) {
+                        ul.style.display = 'none';
+                        currentOpenFilter = null;
+                    } else {
+                        // Скрыть все открытые списки
+                        filters.forEach(f => {
+                            f.querySelector('.xfsort-ul').style.display = 'none';
+                        });
+                        // Открыть текущий список
+                        ul.style.display = 'block';
+                        currentOpenFilter = ul;
+                    }
+                });
+
+                filter.querySelectorAll('.xfsort-ul li').forEach(item => {
+                    item.addEventListener('click', function (event) {
+                        event.preventDefault(); // Предотвращает обновление страницы
+                        const selectedValue = this.getAttribute('data-val');
+                        const field = this.parentElement.getAttribute('data-field');
+                        filter.querySelector('.xfsort-selected').textContent = this.textContent;
+                        filter.querySelector('.xfsort-ul').style.display = 'none';
+                        currentOpenFilter = null;
+                        applyFilters();
+                    });
+                });
+            });
+
+            clearButton.addEventListener('click', function (event) {
+                event.preventDefault(); // Предотвращает обновление страницы
+                filters.forEach(filter => {
+                    filter.querySelector('.xfsort-selected').textContent = filter.querySelector('.xfsort-ul li.active').textContent;
+                    filter.querySelector('.xfsort-ul').style.display = 'none';
+                });
+                currentOpenFilter = null;
+                applyFilters();
+            });
+
+            function applyFilters() {
+                // Пример данных для фильтрации
+                const data = [
+                    { title: 'Фильм 1', country: 'США', genre: 'боевик', year: 2023 },
+                    { title: 'Фильм 2', country: 'Франция', genre: 'драма', year: 2022 },
+                    { title: 'Фильм 3', country: 'Италия', genre: 'комедия', year: 2021 },
+                    // Добавьте больше данных по мере необходимости
+                ];
+
+                const selectedCountry = document.querySelector('.xfsort-select[data-field="starna"] .xfsort-selected').textContent;
+                const selectedGenre = document.querySelector('.xfsort-select[data-field="janr"] .xfsort-selected').textContent;
+                const selectedYear = document.querySelector('.xfsort-select[data-field="god"] .xfsort-selected').textContent;
+
+                const filteredData = data.filter(item => {
+                    const countryMatch = selectedCountry === 'Страна' || item.country === selectedCountry;
+                    const genreMatch = selectedGenre === 'Жанр' || item.genre === selectedGenre;
+                    const yearMatch = selectedYear === 'Год' || item.year.toString() === selectedYear;
+                    return countryMatch && genreMatch && yearMatch;
+                });
+
+                results.innerHTML = '';
+                filteredData.forEach(item => {
+                    const div = document.createElement('div');
+                    div.textContent = `${item.title} (${item.country}, ${item.genre}, ${item.year})`;
+                    results.appendChild(div);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
