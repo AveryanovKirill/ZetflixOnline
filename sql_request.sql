@@ -1,3 +1,10 @@
+CREATE TABLE Users (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Login NVARCHAR(255) NOT NULL UNIQUE,
+    Password NVARCHAR(255) NOT NULL
+);
+
+SELECT * FROM Users WHERE login = 'admin' AND password = '123456'
 -- Таблица для хранения стран
 CREATE TABLE Countries (
     Id INT PRIMARY KEY IDENTITY(1,1),
