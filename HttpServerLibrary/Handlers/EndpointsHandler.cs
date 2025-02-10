@@ -4,6 +4,7 @@ using HttpServerLibrary.HttpResponse;
 using System.Net;
 using System.Reflection;
 using System.Web;
+using System.Text;
 
 namespace HttpServerLibrary.Handlers
 {
@@ -19,34 +20,40 @@ namespace HttpServerLibrary.Handlers
 
         public override void HandleRequest(HttpRequestContext context)
         {
-            var url = context.Request.Url.LocalPath.Trim('/');
-            var methodType = context.Request.HttpMethod;
+            var url = context.Request.Url?.LocalPath.Trim('/');
+            var methodType = context.Request.HttpMethod.ToUpperInvariant();
+
 
             if (_routes.ContainsKey(url))
             {
-                var route = _routes[url].FirstOrDefault(r => r.method.ToString().Equals(methodType, StringComparison.InvariantCultureIgnoreCase));
+                var route = _routes[url].FirstOrDefault(r =>
+                    r.method.ToString().Equals(methodType, StringComparison.InvariantCultureIgnoreCase));
+
                 if (route.handler != null)
                 {
                     var endpointInstance = Activator.CreateInstance(route.endpointType) as BaseEndpoint;
+
                     if (endpointInstance != null)
                     {
                         endpointInstance.SetContext(context);
 
-
-
-                        // вызываем метод
-                        // TODO: подсказка, null - это параметры  (если это Get -> query, если Post -> formData)
                         var parameters = GetParams(context, route.handler);
                         var result = route.handler.Invoke(endpointInstance, parameters) as IHttpResponseResult;
-                        result?.Execute(context.Response);
+                        result?.Execute(context.Response); // Execute the result
 
-                        // TODO: Добавить базовый обработчик если нет result типа IHttpResponseResult
+
                     }
                 }
             }
-            else if (Successor != null)
+            else
             {
-                Successor.HandleRequest(context);
+                Console.WriteLine("route no found");
+                byte[] buffer = Encoding.UTF8.GetBytes("<h1>404</h1>");
+                context.Response.ContentLength64 = buffer.Length;
+                context.Response.ContentType = "text/html";
+                using Stream output = context.Response.OutputStream;
+                output.WriteAsync(buffer);
+                output.FlushAsync();
             }
         }
 
@@ -90,56 +97,49 @@ namespace HttpServerLibrary.Handlers
             _routes[route].Add((method, handler, endpointType));
         }
 
-        private object[] GetParams(HttpRequestContext context, MethodInfo handler)
+        private object?[] GetParams(HttpRequestContext context, MethodInfo handler)
         {
             var parameters = handler.GetParameters();
-            var result = new List<object>();
+            var result = new List<object?>();
 
             if (context.Request.HttpMethod == "GET" || context.Request.HttpMethod == "POST")
             {
+                using var reader = new StreamReader(context.Request.InputStream);
+                string body = reader.ReadToEnd();
+                var data = HttpUtility.ParseQueryString(body);
                 foreach (var parameter in parameters)
                 {
                     if (context.Request.HttpMethod == "GET")
                     {
-                        AddGetMethod(context, result, parameter);
+                        result.Add(Convert.ChangeType(context.Request.QueryString[parameter.Name],
+                            parameter.ParameterType));
                     }
                     else if (context.Request.HttpMethod == "POST")
                     {
-                        AddPostMethod(context, result, parameter);
+                        // using var reader = new StreamReader(context.Request.InputStream);
+                        // string body = reader.ReadToEnd();
+                        // var data = HttpUtility.ParseQueryString(body);
+                        result.Add(Convert.ChangeType(data[parameter.Name], parameter.ParameterType));
                     }
                 }
             }
             else
             {
-                AddOtherMethods(context, result, parameters);
-            }
-            return result.ToArray();
-        }
-
-        private void AddGetMethod(HttpRequestContext context, List<object> result, ParameterInfo parameter)
-        {
-            result.Add(Convert.ChangeType(context.Request.QueryString[parameter.Name], parameter.ParameterType));
-        }
-
-        private void AddPostMethod(HttpRequestContext context, List<object> result, ParameterInfo parameter)
-        {
-            using var reader = new StreamReader(context.Request.InputStream);
-            string body = reader.ReadToEnd();
-            var data = HttpUtility.ParseQueryString(body);
-            result.Add(Convert.ChangeType(data[parameter.Name], parameter.ParameterType));
-        }
-
-        private void AddOtherMethods(HttpRequestContext context, List<object> result, ParameterInfo[] parameters)
-        {
-            var urlSegments = context.Request.Url.Segments
-                    .Skip(2)
+                // Дополнительная обработка для сегментов URL
+                var urlSegments = context.Request.Url?.Segments
+                    .Skip(2) // Пропуск первых двух сегментов
                     .Select(s => s.Replace("/", ""))
                     .ToArray();
 
-            for (int i = 0; i < parameters.Length; i++)
-            {
-                result.Add(Convert.ChangeType(urlSegments[i], parameters[i].ParameterType));
+                for (int i = 0; i < parameters.Length; i++)
+                {
+                    result.Add(Convert.ChangeType(urlSegments?[i], parameters[i].ParameterType));
+                }
             }
+
+            return result.ToArray();
         }
+
+        
     }
 }

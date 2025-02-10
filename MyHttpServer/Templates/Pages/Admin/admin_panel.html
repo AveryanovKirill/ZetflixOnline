@@ -64,7 +64,7 @@
             <input type="text" id="title" name="title" required><br><br>
 
             <label for="year">Год:</label>
-            <input type="number" id="year" name="year" required><br><br>
+            <input type="number" id="year" name="year" required min="2000" max="2025"><br><br>
 
             <label for="duration">Продолжительность (минуты):</label>
             <input type="number" id="duration" name="duration" required><br><br>
@@ -105,18 +105,36 @@
     </div>
 
     <script>
-        // Функция для удаления фильма
         function deleteFilm(filmId) {
-            fetch(`/admin/deletefilm/${filmId}`, {
-                method: 'POST'
-            })
-                .then(response => response.json())
-                .then(data => {
-                    alert(data.message);  // Выводим сообщение о результате
-                    window.location.reload();  // Перезагружаем страницу
+            if (confirm("Вы уверены, что хотите удалить этот фильм?")) {
+                // Формируем данные запроса
+                const formData = new URLSearchParams();
+                formData.append('id', filmId);  // Отправляем ID фильма
+
+                // Отправляем запрос на сервер
+                fetch('/admin/deletefilm', {
+                    method: 'POST',
+                    body: formData,  // Отправляем данные как форму
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded',  // Заголовок для формы
+                    }
                 })
-                .catch(error => console.error('Ошибка при удалении фильма:', error));
+                    .then(() => {
+                        // После отправки запроса просто перезагружаем страницу
+                        window.location.reload();  // Перезагружаем страницу
+                    })
+                    .catch(error => {
+                        console.error('Ошибка при удалении фильма:', error);
+                        alert('Произошла ошибка при удалении фильма.');
+                    });
+            }
         }
     </script>
+
+
+
+
+
+
 </body>
 </html>

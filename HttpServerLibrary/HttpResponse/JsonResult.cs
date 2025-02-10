@@ -6,25 +6,40 @@ namespace HttpServerLibrary.HttpResponse
 {
     internal class JsonResult : IHttpResponseResult
     {
-        private readonly object _data;
+        private readonly string _jsonResponse;
 
-        public JsonResult(object data)
+        public JsonResult(string jsonResponse)
         {
-            _data = data;
+            _jsonResponse = jsonResponse;
         }
 
-        public void Execute(HttpListenerResponse response)
+        public async void Execute(HttpListenerResponse response)
         {
-            response.Headers.Add(HttpRequestHeader.ContentType, "application/json");
-            var json = JsonSerializer.Serialize(_data);
-            byte[] buffer = Encoding.UTF8.GetBytes(json);
-            response.ContentLength64 = buffer.Length;
-            using (Stream output = response.OutputStream)
+            try
             {
-                output.Write(buffer);
-                output.Flush();
-                //output.Close();
+                // Устанавливаем заголовок контента
+                response.Headers.Add(HttpRequestHeader.ContentType, "application/json");
+
+                // Преобразуем строку в массив байтов
+                byte[] buffer = Encoding.UTF8.GetBytes(_jsonResponse);
+
+                // Устанавливаем длину контента
+                response.ContentLength64 = buffer.Length;
+
+                // Записываем данные в поток асинхронно
+                using (Stream output = response.OutputStream)
+                {
+                    await output.WriteAsync(buffer, 0, buffer.Length); // Асинхронно записываем все данные
+                    await output.FlushAsync(); // Асинхронно очищаем буфер
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ошибка при записи в поток: {ex.Message}");
             }
         }
     }
+
+
+
 }

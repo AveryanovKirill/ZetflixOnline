@@ -1,5 +1,6 @@
 ﻿using HttpServerLibrary.HttpResponse;
 using HttpServerLibrary.Session;
+using System.Text.Json;
 
 namespace HttpServerLibrary.Core
 {
@@ -14,7 +15,13 @@ namespace HttpServerLibrary.Core
 
         protected IHttpResponseResult Html(string responseText) => new HtmlResult(responseText);
 
-        protected IHttpResponseResult Json(object data) => new JsonResult(data);
+        protected IHttpResponseResult Text(string message) => new TextResult(message);
+        
+        protected IHttpResponseResult Json(object data)
+        {
+            var jsonResponse = JsonSerializer.Serialize(data);
+            return new JsonResult(jsonResponse);  
+        }
         
         protected IHttpResponseResult Redirect(string url) => new RedirectResponse(url);
         

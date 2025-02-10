@@ -22,11 +22,11 @@
         </div>
         <div class="login-box ui-dialog-content ui-widget-content" id="login-box" style="display: block; width: auto; min-height: 0px; height: 278px; overflow: auto;" scrolltop="0" scrollleft="0">
             <form method="post">
-                <input type="text" name="login_name" id="login_name" placeholder="Ваш логин">
-                <input type="password" name="login_password" id="login_password" placeholder="Ваш пароль">
-                <button onclick="submit();" type="submit" title="Вход">Авторизация</button>
-                <input name="login" type="hidden" id="login" value="submit">
-
+                <input type="text" name="login" id="login" placeholder="Ваш логин" required>
+                <input type="password" name="password" id="password" placeholder="Ваш пароль" required>
+                
+                
+                <button type="submit" title="Вход">Авторизация</button>
             </form>
         </div>
     </div>
